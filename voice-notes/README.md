@@ -76,6 +76,8 @@ bash voice-notes/joze.sh my-presentation.pptx --language fa --title "جزوهٔ 
 | `rnnoise_dn.py` | نویزگیری RNNoise (رفع اشکال `denoise_wav` در pyrnnoise) |
 | `hush_denoise.py` | **پورت پایتونی نویزگیر عصبی Hush/DeepFilterNet3** (ONNX Runtime) |
 | `ab_denoise.py` | مقایسهٔ A/B روش‌های پیش‌پردازش |
+| `md2pdf.py` | تبدیل مارک‌داون فارسی → **PDF راست‌به‌چپ** (fpdf2 + HarfBuzz + فونت وزیرمتن) بدون نیاز به مرورگر |
+| `fonts/` | فونت وزیرمتن (Regular/Bold/Medium) برای PDF فارسی |
 
 ## مدل‌ها کجا ذخیره می‌شوند؟
 

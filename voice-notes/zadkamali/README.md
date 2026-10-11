@@ -15,6 +15,17 @@
 | **`transcript-fa-v3.md`** / `transcript-fa-v3.json` | ✅ پیاده‌سازی **نسخهٔ ۳ (نهایی)** — رأی‌گیری **۶ جریانی**، ۹۰٫۵٪ واژه‌های تأییدشده |
 | `transcript-fa-v2.md` / `.json` | نسخهٔ ۲ — رأی‌گیری ۴ جریانی (نسل میانی) |
 | **`asr-accuracy.html`** / `asr-accuracy.md` | 📏 گزارش صادقانهٔ بهبود دقت شنیدن صدا (با عدد) |
+
+### 📕 نسخه‌های PDF (برای چاپ)
+
+| فایل | صفحه | توضیح |
+|---|---|---|
+| **`joze-kamel.pdf`** | ۲۳ | 🏆 جزوهٔ کامل — راست‌به‌چپ، با بوکمارک و فهرست راهنمای PDF |
+| `joze-voice.pdf` | ۱۵ | جزوهٔ موضوعی روایت‌محور |
+| `asr-accuracy.pdf` | ۵ | گزارش دقت شنیدن صدا |
+
+> بازتولید: `python3 voice-notes/md2pdf.py voice-notes/zadkamali/joze-kamel.md \
+>   --out joze-kamel.pdf --title "جزوهٔ کامل ECG" --subtitle "…"`
 | `accuracy.json` | دادهٔ خام معیارهای دقت (اسلاید‌به‌اسلاید) |
 | `slides-en.html` / `slides-en.md` | متن دقیق ۶۶ اسلاید (انگلیسی) |
 | `transcript-fa.json` | دادهٔ ساخت‌یافته روایت (قطعه‌ها + زمان هر جمله) |

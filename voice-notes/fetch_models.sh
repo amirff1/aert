@@ -5,7 +5,8 @@
 #  این اسکریپت مدل‌ها را از منابعی می‌گیرد که در سندباکس قابل‌دسترس‌اند:
 #    ۱) ggml-tiny.bin                     ← مخزن گیت‌هاب (blob واقعی، بدون LFS)
 #    ۲) vosk-model-small-en-us-0.15.zip   ← مخزن گیت‌هاب (blob واقعی)
-#    ۳) whisper-tiny.onnx (beam-search)   ← رجیستری npm
+#    ۳) vosk-model-small-fa-0.42          ← مخزن گیت‌هاب (فارسی)
+#    ۴) whisper-tiny.onnx (beam-search)   ← رجیستری npm
 #  مدل‌ها بیرون از مخزن گیت ذخیره می‌شوند (پیش‌فرض: ~/asr-models).
 # ---------------------------------------------------------------------------
 set -euo pipefail
@@ -47,7 +48,22 @@ print("✓ استخراج شد →", sys.argv[2])
 PY
 fi
 
-# ---------------------------------------------------------------- ۳) whisper ONNX
+# ---------------------------------------------------------------- ۳) vosk فارسی
+if [ -d "$MODELS_DIR/vosk-fa/vosk-model-small-fa-0.42" ]; then
+  echo "✓ مدل Vosk فارسی موجود است"
+else
+  echo "→ مدل Vosk فارسی از omid3098/Parspeak"
+  rm -rf "$WORK/fa"
+  git clone --quiet --filter=blob:none --no-checkout --depth 1 \
+      https://github.com/omid3098/Parspeak "$WORK/fa"
+  git -C "$WORK/fa" sparse-checkout set --no-cone models
+  git -C "$WORK/fa" checkout --quiet
+  mkdir -p "$MODELS_DIR/vosk-fa"
+  cp -r "$WORK/fa/models/vosk-model-small-fa-0.42" "$MODELS_DIR/vosk-fa/"
+  du -sh "$MODELS_DIR/vosk-fa"
+fi
+
+# ---------------------------------------------------------------- ۴) whisper ONNX
 if [ -s "$MODELS_DIR/whisper-onnx/whisper_cpu_int8_0_model.onnx" ]; then
   echo "✓ مدل ONNX موجود است"
 else

@@ -49,13 +49,13 @@ def find_ffmpeg() -> str:
         die("ffmpeg پیدا نشد. نصب:  pip install imageio-ffmpeg")
 
 
-def to_wav(src: Path, dst: Path, sr: int = 16000) -> Path:
-    """هر فرمتی → wav مونو 16kHz PCM16"""
-    subprocess.run(
-        [find_ffmpeg(), "-hide_banner", "-loglevel", "error", "-y",
-         "-i", str(src), "-vn", "-ac", "1", "-ar", str(sr), "-c:a", "pcm_s16le", str(dst)],
-        check=True,
-    )
+def to_wav(src: Path, dst: Path, sr: int = 16000, denoise: bool = False) -> Path:
+    """هر فرمتی → wav مونو 16kHz PCM16 (اختیاری: نویزگیری + نرمال‌سازی)"""
+    cmd = [find_ffmpeg(), "-hide_banner", "-loglevel", "error", "-y", "-i", str(src)]
+    if denoise:
+        cmd += ["-af", "afftdn=nf=-25,loudnorm=I=-16:TP=-1.5:LRA=11"]
+    cmd += ["-vn", "-ac", "1", "-ar", str(sr), "-c:a", "pcm_s16le", str(dst)]
+    subprocess.run(cmd, check=True)
     return dst
 
 
@@ -153,14 +153,19 @@ def transcribe_whisper(wav: Path, language: str | None = None, threads: int = 2,
     return segs
 
 
-def transcribe_vosk(wav: Path) -> list[dict]:
-    """Vosk (Kaldi) — انگلیسی."""
+def transcribe_vosk(wav: Path, persian: bool = False) -> list[dict]:
+    """Vosk (Kaldi) — انگلیسی یا فارسی."""
     import wave as _w
     from vosk import Model, KaldiRecognizer, SetLogLevel
 
-    d = model_path("vosk", "vosk-en/vosk-model-small-en-us-0.15", "vosk-model-small-en-us-0.15")
+    if persian:
+        d = model_path("vosk-fa", "vosk-fa/vosk-model-small-fa-0.42", "vosk-fa2",
+                            "vosk-model-small-fa-0.42", "vosk-model-small-fa-0.5")
+    else:
+        d = model_path("vosk-en", "vosk-en/vosk-model-small-en-us-0.15", "vosk-model-small-en-us-0.15")
     if d is None:
-        die(f"مدل Vosk پیدا نشد (زیر {MODELS_DIR}/vosk-en). اول fetch_models.sh را اجرا کنید.")
+        die(f"مدل Vosk پیدا نشد (زیر {MODELS_DIR}/{'vosk-fa' if persian else 'vosk-en'}). "
+            "اول fetch_models.sh را اجرا کنید.")
 
     SetLogLevel(-1)
     m = Model(str(d))
@@ -178,13 +183,13 @@ def transcribe_vosk(wav: Path) -> list[dict]:
                 ws = r.get("result") or []
                 segs.append({"t0": ws[0]["start"] if ws else 0.0,
                              "t1": ws[-1]["end"] if ws else 0.0,
-                             "text": r["text"], "engine": "vosk-en"})
+                             "text": r["text"], "engine": "vosk-fa" if persian else "vosk-en"})
     r = json.loads(rec.FinalResult())
     if r.get("text"):
         ws = r.get("result") or []
         segs.append({"t0": ws[0]["start"] if ws else 0.0,
                      "t1": ws[-1]["end"] if ws else 0.0,
-                     "text": r["text"], "engine": "vosk-en"})
+                     "text": r["text"], "engine": "vosk-fa" if persian else "vosk-en"})
     return segs
 
 
@@ -242,7 +247,9 @@ def extract_pptx_media(path: Path, work: Path) -> list[Path]:
 def main() -> None:
     ap = argparse.ArgumentParser(description="صدا به متن (offline)")
     ap.add_argument("input", help="فایل صوتی/ویدیویی یا pptx/zip")
-    ap.add_argument("--engine", default="auto", choices=["auto", "onnx", "whisper", "vosk"])
+    ap.add_argument("--engine", default="auto",
+                    choices=["auto", "onnx", "whisper", "vosk", "vosk-fa"])
+    ap.add_argument("--denoise", action="store_true", help="نویزگیری و نرمال‌سازی صدا پیش از تشخیص")
     ap.add_argument("--language", default=None, help="fa | en | … (پیش‌فرض: تشخیص خودکار)")
     ap.add_argument("--out", default="out", help="پوشهٔ خروجی")
     ap.add_argument("--formats", default="txt,srt,json,md")
@@ -263,7 +270,7 @@ def main() -> None:
     engine = args.engine
     if engine == "auto":
         if args.language and args.language.lower().startswith("fa"):
-            engine = "whisper"          # only multilingual engine we have
+            engine = "vosk-fa" if (MODELS_DIR / "vosk-fa").exists() else "whisper"
         elif args.language and args.language.lower() not in ("en", "auto"):
             engine = "whisper"
         elif (MODELS_DIR / "whisper-onnx").exists():
@@ -283,14 +290,14 @@ def main() -> None:
         print(f"   {len(info['slides'])} اسلاید، {len(media)} فایل صوتی/ویدیویی")
         for i, mfile in enumerate(media, 1):
             print(f"→ [{i}/{len(media)}] {mfile.name}")
-            wav = to_wav(mfile, work / f"m{i}.wav")
+            wav = to_wav(mfile, work / f"m{i}.wav", denoise=args.denoise)
             segs = run_engine(engine, wav, args)
             stem = f"{src.stem}-media{i}"
             all_written[stem] = write_outputs(segs, out_dir, stem, formats)
             print(f"   {len(segs)} قطعه، {sum(len(s['text']) for s in segs)} کاراکتر")
         print(f"\n✓ اسلایدها: {out_dir/'slides'/'slides.md'}")
     else:
-        wav = to_wav(src, work / "audio.wav")
+        wav = to_wav(src, work / "audio.wav", denoise=args.denoise)
         segs = run_engine(engine, wav, args)
         stem = src.stem
         all_written[stem] = write_outputs(segs, out_dir, stem, formats)
@@ -311,7 +318,9 @@ def run_engine(engine: str, wav: Path, args) -> list[dict]:
     if engine == "onnx":
         return transcribe_onnx(wav, args.language, beams=args.beams)
     if engine == "vosk":
-        return transcribe_vosk(wav)
+        return transcribe_vosk(wav, persian=False)
+    if engine == "vosk-fa":
+        return transcribe_vosk(wav, persian=True)
     return transcribe_whisper(wav, args.language, threads=args.threads,
                               initial_prompt=getattr(args, "prompt", None))
 

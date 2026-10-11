@@ -82,8 +82,16 @@ bash voice-notes/joze.sh my-presentation.pptx --language fa --title "جزوهٔ 
 --language fa|en|…                  زبان (پیش‌فرض: تشخیص خودکار)
 --formats txt,srt,json,md           قالب‌های خروجی
 --beams 5                            عرض جست‌وجو در موتور onnx
+--prompt "جملهٔ راهنما"               راهنمای متنی برای whisper (بهبود واژگان/لحن)
 --threads 2                          تعداد هستهٔ CPU
 --out DIR                            پوشهٔ خروجی
+```
+
+مثال برای فارسی (کیفیت نسبی، ولی با راهنما بهتر می‌شود):
+
+```bash
+~/asr-venv/bin/python voice-notes/transcribe.py lecture.mp3 \
+    --engine whisper --language fa --prompt "این یک جلسهٔ درس دانشگاهی به زبان فارسی است."
 ```
 
 ## نکات کاربردی

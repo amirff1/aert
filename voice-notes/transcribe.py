@@ -130,7 +130,8 @@ def transcribe_onnx(wav: Path, language_hint: str | None = None, beams: int = 5,
     return segs
 
 
-def transcribe_whisper(wav: Path, language: str | None = None, threads: int = 2) -> list[dict]:
+def transcribe_whisper(wav: Path, language: str | None = None, threads: int = 2,
+                       initial_prompt: str | None = None) -> list[dict]:
     """whisper.cpp (pywhispercpp) با مدل ggml."""
     from pywhispercpp.model import Model
 
@@ -138,10 +139,13 @@ def transcribe_whisper(wav: Path, language: str | None = None, threads: int = 2)
     if p is None:
         die(f"مدل ggml پیدا نشد (زیر {MODELS_DIR}/models). اول fetch_models.sh را اجرا کنید.")
 
+    kw = {}
+    if initial_prompt:
+        kw["initial_prompt"] = initial_prompt
     m = Model(str(p), n_threads=threads, print_realtime=False, print_progress=False,
               language=(language or "auto"), translate=False)
     segs: list[dict] = []
-    for s in m.transcribe(str(wav), language=(language or None)):
+    for s in m.transcribe(str(wav), language=(language or None), **kw):
         segs.append({
             "t0": s.t0 / 100.0, "t1": s.t1 / 100.0,
             "text": s.text.strip(), "engine": "whisper.cpp",
@@ -244,6 +248,8 @@ def main() -> None:
     ap.add_argument("--formats", default="txt,srt,json,md")
     ap.add_argument("--threads", type=int, default=2)
     ap.add_argument("--beams", type=int, default=5)
+    ap.add_argument("--prompt", default=None,
+                    help="راهنمای متنی برای موتور whisper (بهبود لحن/واژگان، مثلاً یک جملهٔ فارسی)")
     ap.add_argument("--raw", action="store_true", help="بدون پاک‌سازی متن")
     args = ap.parse_args()
 
@@ -306,7 +312,8 @@ def run_engine(engine: str, wav: Path, args) -> list[dict]:
         return transcribe_onnx(wav, args.language, beams=args.beams)
     if engine == "vosk":
         return transcribe_vosk(wav)
-    return transcribe_whisper(wav, args.language, threads=args.threads)
+    return transcribe_whisper(wav, args.language, threads=args.threads,
+                              initial_prompt=getattr(args, "prompt", None))
 
 
 if __name__ == "__main__":

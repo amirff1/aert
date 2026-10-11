@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>جزوهٔ ECG — روایت‌محور (دکتر زادکمالی)</title>
+<style>
+  :root { --ink:#1f2933; --muted:#52606d; --accent:#0f766e; --accent2:#b45309;
+          --bg:#f8fafc; --card:#fff; --line:#e4e7eb; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); line-height:2;
+         font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; }
+  .wrap { max-width:960px; margin:0 auto; padding:36px 22px 90px; }
+  h1 { font-size:2rem; color:var(--accent); border-bottom:3px solid var(--accent);
+       padding-bottom:12px; margin-bottom:6px; }
+  h2 { font-size:1.4rem; margin-top:44px; color:#134e4a; border-inline-start:5px solid var(--accent);
+       padding-inline-start:12px; }
+  h3 { font-size:1.12rem; margin-top:26px; color:#0e7490; }
+  h4 { font-size:1rem; margin-top:20px; }
+  p { margin:10px 0; }
+  a { color:var(--accent); }
+  table { border-collapse:collapse; width:100%; margin:14px 0; background:var(--card);
+          box-shadow:0 1px 2px rgba(0,0,0,.04); font-size:.95rem; }
+  th,td { border:1px solid var(--line); padding:8px 12px; text-align:right; vertical-align:top; }
+  th { background:#ecfdf5; color:#065f46; font-weight:700; }
+  tr:nth-child(even) td { background:#fbfdfc; }
+  ul,ol { padding-inline-start:24px; margin:8px 0; }
+  li { margin:4px 0; }
+  blockquote { margin:16px 0; background:#f0fdfa; border-inline-start:4px solid var(--accent);
+               border-radius:10px; padding:12px 16px; color:#134e4a; }
+  blockquote p { margin:6px 0; }
+  code { background:#f1f5f9; border:1px solid var(--line); border-radius:6px;
+         padding:1px 6px; font-family:ui-monospace,Menlo,Consolas,monospace; direction:ltr;
+         display:inline-block; font-size:.9em; }
+  pre { background:#0f172a; color:#e2e8f0; padding:14px 16px; border-radius:12px;
+        overflow-x:auto; direction:ltr; text-align:left; }
+  pre code { background:none; border:none; color:inherit; padding:0; }
+  hr { border:none; border-top:2px dashed var(--line); margin:36px 0; }
+  strong { color:#0b3d3a; }
+  .meta { color:var(--muted); font-size:.9rem; }
+  footer { margin-top:60px; color:var(--muted); font-size:.85rem; text-align:center;
+           border-top:1px solid var(--line); padding-top:18px; }
+  @media print { body{background:#fff} h2{page-break-after:avoid} table,blockquote{page-break-inside:avoid} }
+</style>
+</head>
+<body><div class="wrap">
+<h1>جزوهٔ ECG — بر پایهٔ روایت استاد</h1>
+<h2>دکتر م. زادکمالی — کاردیولوژیست / الکتروفیزیولوژیست</h2>
+<blockquote><p><strong>این نسخه، روایت‌محور است:</strong> ساختار آن از ترتیب و محتوای حرف‌های خودِ استاد پیروی می‌کند</p><p>(بازسازی‌شده از ۳۱ قطعهٔ صوتی، مجموعاً ۳۲ دقیقه و ۷ ثانیه).</p><p>کنار هر بخش، متن دقیقِ همان اسلاید هم آمده است.</p><p>🟡 <strong>حتی‌المقدور صادقانه:</strong> متن پیاده‌شدهٔ صدا با مدل <strong>کوچک</strong> فارسی تهیه شده و خام و پرخطاست.</p><p>آنچه در کادرهای «🎙 استاد گفت» می‌خوانید، <strong>بازسازی و پاک‌سازی‌شدهٔ</strong> همان گفتار است</p><p>(با کمک متن اسلایدها برای رفع ابهام اصطلاحات تخصصی) — نه نقل‌قول کلمه‌به‌کلمه.</p><p>برای استناد دقیق، فایل صوتی اصلی را بشنوید. متن خام در <code>transcript-fa.md</code> موجود است.</p></blockquote>
+<p><strong>فهرست</strong></p>
+<ol><li><a href="#۱">شروع درس — ادای احترام و طرح کلی</a></li><li><a href="#۲">ECG چیست و چه مزایایی دارد</a></li><li><a href="#۳">پایهٔ فیزیکی: چرا موج مثبت یا منفی ثبت می‌شود؟</a></li><li><a href="#۴">نمای کلی ۱۲ لید</a></li><li><a href="#۵">الکترودهای اندامی و ترتیب رنگ‌ها</a></li><li><a href="#۶">لیدهای دو-قطبی (I، II، III)</a></li><li><a href="#۷">لیدهای پرشی (V1–V6) و محل قرارگیری</a></li><li><a href="#۸">زوایای مختلف نگاه به قلب</a></li><li><a href="#۹">امواج، سگمنت‌ها و فواصل</a></li><li><a href="#۱۰">موج P، QRS و T در یک نگاه</a></li><li><a href="#۱۱">استاندارد ثبت: سرعت و گین</a></li><li><a href="#۱۲">ریتم سینوسی و راه تشخیص آن</a></li><li><a href="#۱۳">محاسبهٔ ضربان قلب (با مثال‌های استاد)</a></li><li><a href="#۱۴">برادی‌کاردی و تاکی‌کاردی (با مثال بیمار)</a></li><li><a href="#۱۵">محور (Axis) — آموزش گام‌به‌گام استاد</a></li><li><a href="#۱۶">لیدهای همجوار (Contiguous) و نماهای قلب</a></li><li><a href="#۱۷">موج P و بزرگی دهلیزها</a></li><li><a href="#۱۸">فاصلهٔ PR و مسیر فرعی (WPW)</a></li><li><a href="#۱۹">توالی دپولاریزاسیون بطنی و نام‌گذاری QRS</a></li><li><a href="#۲۰">آنچه در QRS باید بررسی شود (چک‌لیست استاد)</a></li><li><a href="#۲۱">پیشرفت موج R و ناحیهٔ گذر</a></li><li><a href="#۲۲">ادامهٔ درس — اسلایدهای ۳۷ تا ۶۶ (بدون روایت)</a></li></ol>
+<hr>
+<p>&lt;a id="۱"&gt;&lt;/a&gt;</p>
+<h2>۱) شروع درس</h2>
+<blockquote><p>🎙 <strong>استاد گفت:</strong></p><p>«با سلام؛ بحث را با <strong>فیزیوپاتولوژی</strong> شروع می‌کنیم.»</p></blockquote>
+<blockquote><p>📊 <strong>اسلاید ۱:</strong> ECG — Dr M. Zadkamali — Cardiologist / Electrophysiologist</p></blockquote>
+<hr>
+<p>&lt;a id="۲"&gt;&lt;/a&gt;</p>
+<h2>۲) ECG چیست و چه مزایایی دارد</h2>
+<blockquote><p>🎙 <strong>استاد گفت:</strong></p><p>«الکتروکاردیوگرافی روشی است که <strong>فعالیت الکتریکال قلب</strong> را از طریق <strong>پوست</strong> ثبت می‌کند؛ آنچه دیده می‌شود روی کاغذ ثبت می‌شود. روشی است <strong>غیرتهاجمی</strong>، <strong>به‌آسانی در دسترس</strong> و <strong>کم‌هزینه</strong>.</p><p>فواید بسیاری دارد: برای تشخیص <strong>بیماری ایسکمیک قلبی</strong>، <strong>آریتمی‌ها</strong>، <strong>بیماری‌های ساختاری قلب</strong> کمک‌کننده است؛ و هم‌چنین برای تشخیص بعضی مسائل مربوط به <strong>سایر ارگان‌ها</strong> — مثل <strong>مسائل متابولیک</strong>.»</p></blockquote>
+<blockquote><p>📊 <strong>اسلاید ۲:</strong> Transcutaneous recording of cardiac electrical activity — Non-invasive · Easily available · Cost-effective · Several advantages — For diagnosis of ischemia, arrhythmias, structural heart diseases, metabolic diseases…</p></blockquote>
+<p><strong>چهار ستون کاربرد ECG:</strong> ایسکمی و انفارکتوس · آریتمی · بیماری ساختاری قلب · بیماری متابولیک و غیرقلبی.</p>
+<hr>
+<p>&lt;a id="۳"&gt;&lt;/a&gt;</p>
+<h2>۳) پایهٔ فیزیکی: چرا موج مثبت یا منفی ثبت می‌شود؟</h2>
+<blockquote><p>🎙 <strong>استاد گفت:</strong></p><p>«ECG حاصل ثبت فعالیت الکتریکال میوکارد است — <strong>در سطح سلولی</strong>. وقتی موج دپلاریزاسیون <strong>به سمت الکترود مثبت</strong> می‌آید، موج <strong>مثبت</strong> ثبت می‌شود؛ و اگر <strong>از الکترود مثبت دور</strong> شود، موج <strong>منفی</strong> ثبت می‌شود.»</p></blockquote>
+<blockquote><p>📊 <strong>اسلاید ۳–۴ و ۱۰:</strong> Vector of each lead is depicted from <strong>negative to positive electrode</strong>.</p></blockquote>
+<p><strong>قاعدهٔ طلایی (این را همیشه به خاطر بسپارید):</strong></p>
+<pre><code>جبههٔ دپلاریزاسیون → به سمت الکترود مثبت   ⇒  موج مثبت
+جبههٔ دپولاریزاسیون → دور از الکترود مثبت  ⇒  موج منفی</code></pre>
+<hr>
+<p>&lt;a id="۴"&gt;&lt;/a&gt;</p>
+<h2>۴) نمای کلی ۱۲ لید</h2>
+<blockquote><p>🎙 <strong>استاد گفت:</strong></p><p>«این نمای کلی چیزی است که در ECG استاندارد می‌بینیم. ECG استاندارد <strong>۱۲ لید</strong> دارد: <strong>شش لید اندامی</strong> به نام‌های <strong>یک، دو، سه</strong>، <strong>aVR، aVL و aVF</strong>؛ و <strong>شش لید پرشی</strong> که از <strong>V1 تا V6</strong> نام‌گذاری می‌شوند. در ادامه اشاره می‌کنیم که این لیدهای مختلف چگونه ثبت می‌شوند.»</p></blockquote>
+<blockquote><p>📊 <strong>اسلاید ۵:</strong> ۱۲ لید سطحی = ۶ لید اندامی + ۶ لید پرشی</p></blockquote>
+<pre><code>        ۱۲ لید استاندارد
+        ├── ۶ لید اندامی (Limb)
+        │   ├── دو-قطبی (Bipolar): I , II , III
+        │   └── تقویت‌شده (Augmented): aVR , aVL , aVF
+        └── ۶ لید پرشی (Precordial): V1 … V6</code></pre>
+<hr>
+<p>&lt;a id="۵"&gt;&lt;/a&gt;</p>
+<h2>۵) الکترودهای اندامی و ترتیب رنگ‌ها</h2>
+<blockquote><p>🎙 <strong>استاد گفت:</strong></p><p>«برای تهیهٔ لیدهای اندامی به <strong>چهار الکترود</strong> احتیاج داریم که به <strong>دیستال</strong> دو اندام فوقانی و دو اندام تحتانی وصل می‌شوند.</p><p>اگر به هر دلیلی انتهای اندام <strong>قابل دسترس نبود</strong> — یا بیمار <strong>نقص عضو</strong> داشت — امکان دیگری وجود دارد: می‌شود الکترودها را به <strong>بخش پروکسیمال</strong> اندام یا محل اتصال اندام به تنه وصل کرد.</p><p>ترتیب رنگ‌ها به این صورت است: <strong>قرمز = دست راست</strong>، <strong>زرد = دست چپ</strong>، <strong>سبز = پای چپ</strong>، و <strong>الکترود مشکی = پای راست</strong>.»</p></blockquote>
+<blockquote><p>📊 <strong>اسلاید ۶:</strong> Limb electrodes</p></blockquote>
+<table><thead><tr><th>رنگ</th><th>محل اتصال</th><th>توضیح</th></tr></thead><tbody><tr><td>🔴 قرمز</td><td>بازوی راست (RA)</td><td>—</td></tr><tr><td>🟡 زرد</td><td>بازوی چپ (LA)</td><td>—</td></tr><tr><td>🟢 سبز</td><td>پای چپ (LL)</td><td>—</td></tr><tr><td>⚫ مشکی/قهوه‌ای</td><td>پای راست (RL)</td><td>سیم خنثی (ground)</td></tr></tbody></table>
+<blockquote><p>💡 <strong>نکتهٔ عملی:</strong> برای بیمار قطع عضو یا سرم‌گذاری‌شده، الکترود را روی <strong>استامپ پروکسیمال</strong> یا روی <strong>شکم/سرشانه</strong> می‌بندند تا شکل موج حفظ شود (شکل موج تغییر می‌کند، اما ریتم و بسیاری از پارامترها قابل خواندن می‌ماند).</p></blockquote>
+<hr>
+<p>&lt;a id="۶"&gt;&lt;/a&gt;</p>
+<h2>۶) لیدهای دو-قطبی (I، II، III)</h2>
+<blockquote><p>🎙 <strong>استاد گفت:</strong></p><p>«در لیدهای دو-قطبی، کنار هم <strong>دو الکترود مثبت و منفی</strong> لازم است:</p><p>اگر <strong>منفی روی دست راست</strong> و <strong>مثبت روی دست چپ</strong> باشد، <strong>لید یک</strong> ایجاد می‌شود؛</p><p>اگر <strong>منفی روی دست راست</strong> و <strong>مثبت روی پای چپ</strong> باشد، <strong>لید دوم</strong>؛</p><p>و اگر <strong>منفی روی دست چپ</strong> و <strong>مثبت روی پای چپ</strong> باشد، <strong>لید سه</strong> تشکیل می‌شود.»</p></blockquote>
+<blockquote><p>📊 <strong>اسلاید ۷:</strong> Bipolar leads</p></blockquote>
+<table><thead><tr><th>لید</th><th>قطب منفی</th><th>قطب مثبت</th></tr></thead><tbody><tr><td><strong>I</strong></td><td>دست راست (RA)</td><td>دست چپ (LA)</td></tr><tr><td><strong>II</strong></td><td>دست راست (RA)</td><td>پای چپ (LL)</td></tr><tr><td><strong>III</strong></td><td>دست چپ (LA)</td><td>پای چپ (LL)</td></tr></tbody></table>
+<p><strong>رابطهٔ کلیدی (قانون اینتهوفن):</strong></p>
+<pre><code>I + III = II</code></pre>
+<blockquote><p>💡 چرا لید II را برای پایش انتخاب می‌کنیم؟ چون تقریباً موازی محور طبیعی قلب است و موج P در آن واضح‌ترین شکل را دارد.</p></blockquote>
+<hr>
+<p>&lt;a id="۷"&gt;&lt;/a&gt;</p>
+<h2>۷) لیدهای پرشی (V1–V6) و محل قرارگیری</h2>
+<blockquote><p>🎙 <strong>استاد گفت:</strong></p><p>«لیدهای پرشی از <strong>V1 تا V6</strong> هستند و الکترود آن‌ها در <strong>فضای بین‌دنده‌ای</strong> و در یک <strong>سطح افقی</strong> دور قفسهٔ سینه قرار می‌گیرد: <strong>V1 و V2</strong> در فضای بین‌دنده‌ای <strong>چهارم</strong> کنار جناغ راست و چپ؛ <strong>V3</strong> بین V2 و V4؛ <strong>V4</strong> در فضای بین‌دنده‌ای <strong>پنجم</strong> در خط میان‌ترقوه‌ای چپ؛ <strong>V5 و V6</strong> در همان سطح و به‌طرف خط زیربغل قدامی و میانی.»</p></blockquote>
+<blockquote><p>📊 <strong>اسلاید ۹:</strong> Precordial leads</p></blockquote>
+<table><thead><tr><th>لید</th><th>موقعیت دقیق</th></tr></thead><tbody><tr><td><strong>V1</strong></td><td>فضای بین‌دنده‌ای چهارم، لبهٔ راست جناغ</td></tr><tr><td><strong>V2</strong></td><td>فضای بین‌دنده‌ای چهارم، لبهٔ چپ جناغ</td></tr><tr><td><strong>V3</strong></td><td>بین V2 و V4</td></tr><tr><td><strong>V4</strong></td><td>فضای بین‌دنده‌ای پنجم، خط میان‌ترقوه‌ای چپ</td></tr><tr><td><strong>V5</strong></td><td>هم‌سطح V4، خط زیربغل قدامی</td></tr><tr><td><strong>V6</strong></td><td>هم‌سطح V4–V5، خط زیربغل میانی</td></tr></tbody></table>
+<blockquote><p>💡 قرار دادن V1 و V2 در <strong>فضای بین‌دنده‌ای چهارم</strong> (نه دوم یا سوم) حیاتی است؛ اشتباه در آن، الگوهای کاذب «R بلند در V1» یا اختلال در پیشرفت R ایجاد می‌کند.</p></blockquote>
+<hr>
+<p>&lt;a id="۸"&gt;&lt;/a&gt;</p>
+<h2>۸) زوایای مختلف نگاه به قلب</h2>
+<blockquote><p>🎙 <strong>استاد گفت:</strong></p><p>«لیدهای مختلف، از <strong>زوایای مختلف</strong> به فعالیت الکتریکی قلب نگاه می‌کنند: لیدهای <strong>اندامی</strong> در یک <strong>نما/مقطع</strong> (صفحهٔ فرونتال) و لیدهای <strong>پرشی</strong> در <strong>مقطع دیگر</strong> (صفحهٔ افقی).»</p></blockquote>
+<blockquote><p>📊 <strong>اسلاید ۱۰–۱۱:</strong> هر لید یک بردار دارد که از قطب منفی به قطب مثبت کشیده می‌شود.</p></blockquote>
+<p><strong>نتیجهٔ عملی:</strong> قلب یک پدیدهٔ سه‌بعدی است؛ برای «دیدن» یک ناحیه باید چند لید <strong>همجوار</strong> (که به یک ناحیه نگاه می‌کنند) با هم تفسیر شوند — به همین دلیل در بخش بعد به «لیدهای همجوار» می‌رسیم.</p>
+<hr>
+<p>&lt;a id="۹"&gt;&lt;/a&gt;</p>
+<h2>۹) امواج، سگمنت‌ها و فواصل</h2>
+<blockquote><p>🎙 <strong>استاد گفت:</strong></p><p>«امواج را داریم؛ <strong>فواصل</strong> و <strong>سگمنت‌ها</strong> هم داریم — بخش‌هایی روی <strong>خط ایزوالکتریک</strong> (خط پایه) که بین امواج قرار می‌گیرند. <strong>سگمنت</strong> بین دو موج است و <strong>فاصله (interval)</strong> شامل امواج هم می‌شود.»</p></blockquote>
+<blockquote><p>📊 <strong>اسلاید ۱۲:</strong> Waves, segments, intervals</p></blockquote>
+<table><thead><tr><th>مفهوم</th><th>تعریف</th></tr></thead><tbody><tr><td><strong>موج</strong> (Wave)</td><td>انحراف مثبت/منفی از خط پایه</td></tr><tr><td><strong>سگمنت</strong> (Segment)</td><td>فاصله بین دو موج — موج را دربر نمی‌گیرد</td></tr><tr><td><strong>فاصله</strong> (Interval)</td><td>سگمنت + موج(های) مجاور</td></tr></tbody></table>
+<hr>
+<p>&lt;a id="۱۰"&gt;&lt;/a&gt;</p>
+<h2>۱۰) موج P، QRS و T در یک نگاه</h2>
+<blockquote><p>🎙 <strong>استاد گفت:</strong></p><p>«<strong>موج P</strong> مربوط به فعالیت و <strong>دپولاریزاسیون دهلیزها</strong> است؛ <strong>کمپلکس QRS</strong> مربوط به <strong>دپولاریزاسیون بطن‌ها</strong>؛ و <strong>موج T</strong> مربوط به <strong>رپولاریزاسیون بطن‌ها</strong>.»</p></blockquote>
+<blockquote><p>📊 <strong>اسلاید ۱۲–۱۳:</strong> Waves, segments, intervals</p></blockquote>
+<pre><code>        موج P ─── QRS ─── موج T
+          │        │         │
+   دپولاریزاسیون  دپولاریزاسیون  رپولاریزاسیون
+      دهلیزها        بطن‌ها        بطن‌ها</code></pre>
+<hr>
+<p>&lt;a id="۱۱"&gt;&lt;/a&gt;</p>
+<h2>۱۱) استاندارد ثبت: سرعت و گین</h2>
+<blockquote><p>🎙 <strong>استاد گفت:</strong></p><p>«<strong>سرعت استاندارد ۲۵ میلی‌متر بر ثانیه</strong> و <strong>گین ۱۰ میلی‌متر بر میلی‌ولت</strong> است. اگر با گین و سرعت استاندارد ثبت شده باشد، همان شکل طبیعی را می‌بینیم.</p><p>اگر به دلیلی <strong>گین کاهش</strong> پیدا کند، امواج به‌سمت بالا و پایین <strong>فشرده</strong> می‌شوند و تغییرات <strong>خفیف‌تر</strong> دیده می‌شود؛ برعکس اگر <strong>گین افزایش</strong> پیدا کند، امواج <strong>بزرگ‌تر</strong> دیده می‌شوند.</p><p>در مورد <strong>سرعت</strong> هم همین‌طور است: اگر دستگاه با سرعت <strong>بالاتر</strong> حرکت کند، فاصلهٔ بین کمپلکس‌ها <strong>بیشتر</strong>؛ و با سرعت <strong>کمتر</strong>، فاصله‌ها <strong>کمتر</strong> می‌شود.</p><p><strong>بهترین حالت این است که ما حالت غیراستاندارد را هم بدانیم</strong> — چون اگر روی نوار نوشته شده باشد با چه سرعت و گینی ثبت شده، می‌توانیم قضاوت درست کنیم. بعضی وقت‌ها هم اندازه‌ها را برحسب <strong>خانه‌های کوچک</strong> می‌گویند (مثلاً عرض موج)؛ اگر با استاندارد مطابقت داده شود، معنایش روشن است.»</p></blockquote>
+<blockquote><p>📊 <strong>اسلاید ۱۴:</strong> Standard — Speed: 25 mm/sec · Gain: 10 mm/mV</p></blockquote>
+<table><thead><tr><th>پارامتر</th><th>مقدار استاندارد</th><th>معادل</th></tr></thead><tbody><tr><td>سرعت کاغذ</td><td>۲۵ mm/s</td><td>هر خانهٔ کوچک = ۰٫۰۴ s</td></tr><tr><td>گین</td><td>۱۰ mm/mV</td><td>۱ mV = ۱۰ mm = ۲ خانهٔ بزرگ</td></tr><tr><td>کالیبراسیون</td><td>پالس ۱ mV</td><td>باید در ابتدای نوار دیده شود</td></tr></tbody></table>
+<blockquote><p>💡 <strong>هشدار بالینی:</strong> «گین پایین» می‌تواند یک آمپلی‌تود واقعاً کوچک (مثل میکروولتاژ در افیوژن پریکارد) را پنهان کند یا برعکس، HV کاذب بسازد. همیشه اول، <strong>سرعت و گین</strong> و <strong>کالیبراسیون</strong> را چک کنید.</p></blockquote>
+<hr>
+<p>&lt;a id="۱۲"&gt;&lt;/a&gt;</p>
+<h2>۱۲) ریتم سینوسی و راه تشخیص آن</h2>
+<blockquote><p>🎙 <strong>استاد گفت:</strong></p><p>«وقتی <strong>موج P در لید دو مثبت</strong> و <strong>در aVR منفی</strong> است، ریتم سینوسی است. در ریتم سینوسی باید برای هر <strong>QRS</strong> یک <strong>موج P</strong> وجود داشته باشد که با فاصلهٔ مشخصی قبل از آن آمده باشد، و فاصله‌ها <strong>منظم</strong> باشند.</p><p>در مواقعی که امواج QRS فرم دیگری دارند و <strong>ارتباط بین P و QRS برقرار نیست</strong>، ریتم سینوسی نیست؛ ریتم دیگری است که در بحث <strong>آریتمی‌ها</strong> با جزئیات بیشتر توضیح داده خواهد شد.»</p></blockquote>
+<blockquote><p>📊 <strong>اسلاید ۱۵:</strong> Sinus — Rhythm</p></blockquote>
+<p><strong>معیارهای ریتم سینوسی:</strong></p>
+<ol><li>موج <strong>P مثبت در لید II</strong> و <strong>منفی در aVR</strong></li><li><strong>هر P قبل از هر QRS</strong> با فاصلهٔ ثابت PR</li><li>فاصلهٔ <strong>RR منظم</strong></li><li>ضربان بین <strong>۶۰ تا ۱۰۰</strong></li></ol>
+<hr>
+<p>&lt;a id="۱۳"&gt;&lt;/a&gt;</p>
+<h2>۱۳) محاسبهٔ ضربان قلب (با مثال‌های استاد)</h2>
+<blockquote><p>🎙 <strong>استاد گفت:</strong></p><p>«اگر ریتم <strong>منظم</strong> باشد و فاصلهٔ کمپلکس‌ها ثابت، <strong>تعداد خانه‌های بزرگ</strong> بین دو کمپلکس را می‌شماریم و <strong>۳۰۰</strong> را تقسیم بر آن می‌کنیم. مثلاً اگر فاصله <strong>چهار خانهٔ بزرگ</strong> باشد: ۳۰۰ ÷ ۴ = <strong>۷۵</strong>.</p><p>اگر ضربان <strong>خیلی بالا</strong> باشد (فاصله‌ها کم)، از <strong>خانه‌های کوچک</strong> استفاده می‌کنیم: <strong>۱۵۰۰</strong> تقسیم بر تعداد خانهٔ کوچک.</p><p>اگر <strong>نامنظم</strong> باشد، تعداد <strong>کمپلکس‌ها را در یک بازهٔ زمانی طولانی‌تر مثلاً ۶ ثانیه</strong> می‌شماریم و در <strong>۱۰</strong> ضرب می‌کنیم؛ یا در ۱۰ ثانیه می‌شماریم و در ۶ ضرب می‌کنیم.</p><p>در یک مثال از بیمار: با فرمول ۱۵۰۰، عدد حدود <strong>۶۶</strong> درآمد — یعنی ضربان حدود <strong>۶۶</strong> بود (در بالای نوار هم نوشته شده gain 10 و rate ۲۵ میلی‌متر بر ثانیه). در مثال دیگر <strong>دو خانهٔ بزرگ</strong> فاصله بود: ۳۰۰ ÷ ۲ = <strong>۱۵۰</strong>.»</p></blockquote>
+<blockquote><p>📊 <strong>اسلاید ۱۶:</strong> Heart rate</p></blockquote>
+<table><thead><tr><th>ریتم</th><th>فرمول</th></tr></thead><tbody><tr><td><strong>منظم</strong></td><td><code>۳۰۰ ÷ تعداد خانهٔ بزرگ</code></td></tr><tr><td><strong>منظم با ضربان بالا</strong></td><td><code>۱۵۰۰ ÷ تعداد خانهٔ کوچک</code></td></tr><tr><td><strong>نامنظم</strong></td><td><code>تعداد QRS در ۶ ثانیه × ۱۰</code></td></tr></tbody></table>
+<p><strong>مثال‌های کلاسیک (که استاد روی نوار نشان داد):</strong></p>
+<table><thead><tr><th>فاصله بین دو R</th><th>ضربان قلب</th></tr></thead><tbody><tr><td>۵ خانهٔ بزرگ</td><td>۶۰</td></tr><tr><td>۴ خانهٔ بزرگ</td><td>۷۵</td></tr><tr><td>۳ خانهٔ بزرگ</td><td>۱۰۰</td></tr><tr><td>۲ خانهٔ بزرگ</td><td>۱۵۰</td></tr><tr><td>۱ خانهٔ بزرگ</td><td>۳۰۰</td></tr></tbody></table>
+<blockquote><p>💡 <strong>ترفند:</strong> روش ۳۰۰ به‌راحتی از یاد نمی‌رود اگر دنبالهٔ ۳۰۰-۱۵۰-۱۰۰-۷۵-۶۰-۵۰ را حفظ کنید.</p></blockquote>
+<hr>
+<p>&lt;a id="۱۴"&gt;&lt;/a&gt;</p>
+<h2>۱۴) برادی‌کاردی و تاکی‌کاردی (با مثال بیمار)</h2>
+<blockquote><p>🎙 <strong>استاد گفت:</strong></p><p>«اگر ضربان بیمار <strong>زیر ۶۰</strong> باشد، <strong>برادی‌کاردی</strong> و اگر <strong>بالای ۱۰۰</strong> باشد، <strong>تاکی‌کاردی</strong> می‌گویند.</p><p>در بیماری که ملاحظه می‌کنید، فاصلهٔ کمپلکس‌ها <strong>متغیر</strong> است؛ اینجا باید تعداد کمپلکس‌های QRS را در یک بازهٔ زمانی (۶ ثانیه) بشماریم و در ۱۰ ضرب کنیم تا ضربان تقریبی به دست بیاید. در این بیمار حدود <strong>۱۳۰ تا ۱۴۰</strong> درآمد — پس <strong>تاکی‌کاردی</strong> محسوب می‌شود.»</p></blockquote>
+<blockquote><p>📊 <strong>اسلاید ۱۹–۲۰:</strong> Bradycardia (HR&lt;60) · Tachycardia (HR&gt;100)</p></blockquote>
+<pre><code>HR &lt; 60    →  برادی‌کاردی
+HR 60–100  →  طبیعی
+HR &gt; 100   →  تاکی‌کاردی</code></pre>
+<blockquote><p>💡 در <strong>ضربان نامنظم</strong>، روش ۳۰۰ خطای زیادی می‌دهد؛ همیشه از روش ۶ ثانیه‌ای (یا شمارش در ۱۰ ثانیه × ۶) استفاده کنید.</p></blockquote>
+<hr>
+<p>&lt;a id="۱۵"&gt;&lt;/a&gt;</p>
+<h2>۱۵) محور (Axis) — آموزش گام‌به‌گام استاد</h2>
+<blockquote><p>🎙 <strong>استاد گفت:</strong></p><p>«برای محور، لیدهای <strong>یک و دو</strong> را نگاه می‌کنیم:</p><p>اگر <strong>هر دو مثبت</strong> باشند → محور <strong>نرمال</strong> است.</p><p>اگر <strong>لید یک منفی</strong> و <strong>لید دو مثبت</strong> باشد → <strong>انحراف محور به راست</strong>.</p><p>اگر <strong>لید یک مثبت</strong> ولی <strong>لید دو منفی</strong> باشد → باید <strong>aVF</strong> را هم چک کنیم؛ اگر aVF مثبت باشد مشکلی نیست، ولی اگر منفی باشد → <strong>انحراف محور به چپ</strong>.</p><p>با نگاه کردن به اینکه <strong>بیشترین برآیند QRS با کدام لید هم‌راستا</strong> است، می‌توان محور را دقیق‌تر تعیین کرد: اگر هم‌راستا با <strong>لید یک</strong> باشد، محور حدود <strong>صفر درجه</strong>؛ اگر با <strong>aVF</strong> باشد، حدود <strong>۹۰ درجه</strong>؛ و اگر با <strong>لید دو</strong> باشد، حدود <strong>۶۰ درجه</strong>. محورهایی مثل <strong>۱۲۰ درجه</strong>، <strong>۳۰- درجه</strong> و <strong>۲۱۰- درجه</strong> هم با همین منطق به دست می‌آیند.</p><p><strong>محدودهٔ نرمال محور بین ۳۰- تا ۹۰+ درجه</strong> است. ناحیهٔ بین <strong>صفر تا ۳۰- درجه</strong> (که با رنگ صورتی نشان داده شده) هم <strong>جزو محدودهٔ نرمال</strong> شمرده می‌شود.</p><p>انحراف به چپ وقتی است که موج <strong>QRS در لید یک مثبت</strong> و در <strong>لیدهای دو و aVF منفی</strong> باشد. انحراف به راست هم مشخصاً زمانی است که <strong>هر دو لید یک و aVF... [محور در جهت لید aVF]</strong> باشد.»</p></blockquote>
+<blockquote><p>📊 <strong>اسلاید ۲۱–۲۲ و ۳۳:</strong> Axis · Contagious leads</p></blockquote>
+<p><strong>الگوریتم تعیین محور با لید I و aVF (ساده‌ترین راه):</strong></p>
+<table><thead><tr><th>لید I</th><th>لید aVF</th><th>محور</th><th>تفسیر</th></tr></thead><tbody><tr><td>+</td><td>+</td><td>۰° تا ۹۰°</td><td><strong>نرمال</strong></td></tr><tr><td>+</td><td>−</td><td>۰° تا ۳۰-°</td><td><strong>LAD فیزیولوژیک</strong> (نرمال)</td></tr><tr><td>+</td><td>−</td><td>بیش از ۳۰-°</td><td><strong>انحراف به چپ (LAD)</strong></td></tr><tr><td>−</td><td>+</td><td>بیش از ۹۰°</td><td><strong>انحراف به راست (RAD)</strong></td></tr><tr><td>−</td><td>−</td><td>حدود ۱۸۰°</td><td><strong>محور شمال‌غربی / extreme</strong></td></tr></tbody></table>
+<blockquote><p>💡 <strong>کدام لید بیشترین QRS را دارد؟</strong> اگر بلندترین R در <strong>لید II</strong> است، محور حدود <strong>۶۰ درجه</strong>؛ اگر در <strong>لید I</strong>، حدود <strong>۰ درجه</strong>؛ و اگر در <strong>aVF</strong>، حدود <strong>۹۰ درجه</strong>. همین «برآیند بردار» به شما می‌گوید قلب به کدام سمت می‌چرخد.</p></blockquote>
+<hr>
+<p>&lt;a id="۱۶"&gt;&lt;/a&gt;</p>
+<h2>۱۶) لیدهای همجوار (Contiguous) و نماهای قلب</h2>
+<blockquote><p>🎙 <strong>استاد گفت:</strong></p><p>«لیدهای <strong>همجوار</strong> لیدهایی هستند که به <strong>یک ناحیهٔ قلب</strong> نگاه می‌کنند:</p><p><strong>II، III و aVF</strong> به <strong>دیوارهٔ تحتانی</strong>؛</p><p><strong>V1 و V2</strong> به <strong>سپتوم</strong>؛</p><p><strong>V3 و V4</strong> به <strong>دیوارهٔ قدامی</strong>؛</p><p><strong>V5، V6، I و aVL</strong> به <strong>دیوارهٔ جانبی (لاترال)</strong>.</p><p>هر لید از یک زاویهٔ دید متفاوت به قلب نگاه می‌کند؛ همین باعث می‌شود که وقتی تغییری در یک ناحیه رخ می‌دهد، در چند لید همجوار ببینیم — و این پایهٔ <strong>موضع‌یابی ایسکمی/انفارکتوس</strong> است.»</p></blockquote>
+<blockquote><p>📊 <strong>اسلاید ۲۲:</strong> Contagious leads</p></blockquote>
+<table><thead><tr><th>ناحیه</th><th>لیدهای همجوار</th></tr></thead><tbody><tr><td><strong>سپتال</strong></td><td>V1، V2</td></tr><tr><td><strong>قدامی (Anterior)</strong></td><td>V3، V4</td></tr><tr><td><strong>جانبی (Lateral)</strong></td><td>I، aVL، V5، V6</td></tr><tr><td><strong>تحتانی (Inferior)</strong></td><td>II، III، aVF</td></tr></tbody></table>
+<blockquote><p>💡 <strong>کاربرد بالینی:</strong> تغییر ST در <strong>دو لید همجوار</strong> معنادار است — نه در یک لید تنها. مثلاً ST elevation در V2 و V3 = انفارکتوس قدامی-سپتال.</p></blockquote>
+<hr>
+<p>&lt;a id="۱۷"&gt;&lt;/a&gt;</p>
+<h2>۱۷) موج P و بزرگی دهلیزها</h2>
+<blockquote><p>🎙 <strong>استاد گفت:</strong></p><p>«<strong>موج P</strong> حاصل فعالیت الکتریکی <strong>دهلیزها</strong> است. این فعالیت از <strong>گرهٔ سینوسی (SA node)</strong> شروع می‌شود که در بخش <strong>بالایی و خلفی دهلیز راست</strong> قرار دارد و جهت دپلاریزاسیون از <strong>راست به چپ و از بالا به پایین</strong> است. نتیجهٔ آن، موج P است که در <strong>لید دو مثبت</strong> و در <strong>aVR منفی</strong> دیده می‌شود؛ در <strong>V1</strong> به‌صورت <strong>دو-فازی</strong> (مثبت-منفی) دیده می‌شود.</p><p>دربارهٔ اندازهٔ نرمال موج P صحبت کردیم: <strong>ارتفاع و عرض</strong>. اگر بیمار <strong>بزرگی دهلیز راست</strong> داشته باشد، <strong>ولتاژ موج P در لید دو افزایش</strong> پیدا می‌کند؛ و در V1 قسمت مثبت موج P بلندتر می‌شود.</p><p>و اگر <strong>بزرگی دهلیز چپ</strong> باشد، <strong>موج P پهن‌تر</strong> می‌شود (دندانه‌دار) و در <strong>لید یک و V1</strong> قسمت <strong>منفی موج P</strong> واضح‌تر و بارزتر می‌شود.»</p></blockquote>
+<blockquote><p>📊 <strong>اسلاید ۲۶:</strong> P wave — Atrial depolarization · Up to 3 mm width · Up to 2.5 mm height · Leads II &amp; V1 · If sinus → Positive in II · Biphasic (+/−) in V1</p></blockquote>
+<table><thead><tr><th>پارامتر</th><th>نرمال</th><th>بزرگی دهلیز راست (P pulmonale)</th><th>بزرگی دهلیز چپ (P mitrale)</th></tr></thead><tbody><tr><td>عرض</td><td>≤ ۳ mm (۰٫۱۲ s)</td><td>طبیعی</td><td><strong>پهن، دندانه‌دار</strong> (&gt; ۰٫۱۲ s)</td></tr><tr><td>ارتفاع</td><td>≤ ۲٫۵ mm</td><td><strong>بلند</strong> (&gt; ۲٫۵ mm در II)</td><td>طبیعی</td></tr><tr><td>V1</td><td>دو-فازی (+/−)</td><td>جزء مثبت بلند</td><td><strong>جزء منفی پهن</strong></td></tr></tbody></table>
+<blockquote><p>💡 در V1، <strong>جزء منفی عمیق موج P</strong> شاخص حساس بزرگی دهلیز چپ است (چون دهلیز چپ خلف‌تر است و در V1، فاز انتهایی به آن مربوط می‌شود).</p></blockquote>
+<hr>
+<p>&lt;a id="۱۸"&gt;&lt;/a&gt;</p>
+<h2>۱۸) فاصلهٔ PR و مسیر فرعی (WPW)</h2>
+<blockquote><p>🎙 <strong>استاد گفت:</strong></p><p>«<strong>فاصلهٔ PR</strong> را داریم که همان <strong>خط ایزوالکتریک بین موج P و QRS</strong> است. این فاصله نشان‌دهندهٔ <strong>تأخیر در هدایت بین دهلیز و بطن</strong> (گرهٔ AV) است.</p><p>مقدار طبیعی حدود <strong>سه تا پنج خانهٔ کوچک</strong> است — یعنی <strong>دوازده تا بیست صدم ثانیه</strong> (۰٫۱۲ تا ۰٫۲ ثانیه یا ۱۲۰ تا ۲۰۰ میلی‌ثانیه).</p><p>اما مهم‌ترین تشخیصی که در بحث PR مطرح است، <strong>کوتاه شدن PR</strong> است: <strong>وجود یک مسیر فرعی (accessory pathway)</strong> که باعث می‌شود قسمتی از بطن زودتر از موعد دپلاریزه شود و به‌صورت <strong>موج دلتا</strong> و کوتاه شدن فاصلهٔ PR دیده می‌شود — همان <strong>سندرم WPW</strong>.»</p></blockquote>
+<blockquote><p>📊 <strong>اسلاید ۲۹:</strong> PR interval — Related to delay in AV nodal conduction · 0.12–0.2 s</p></blockquote>
+<table><thead><tr><th>فاصلهٔ PR</th><th>تفسیر</th></tr></thead><tbody><tr><td><strong>۰٫۱۲–۰٫۲ ثانیه</strong></td><td>طبیعی (۳–۵ خانهٔ کوچک)</td></tr><tr><td><strong>&gt; ۰٫۲ ثانیه</strong></td><td><strong>بلوک درجهٔ یک AV</strong></td></tr><tr><td><strong>&lt; ۰٫۱۲ ثانیه</strong> + موج دلتا</td><td><strong>WPW</strong> (مسیر فرعی)</td></tr></tbody></table>
+<blockquote><p>💡 اگر PR کوتاه است، سه چیز را بگردید: <strong>موج دلتا</strong>، <strong>QRS پهن</strong> و <strong>تغییرات ثانویهٔ ST/T</strong>.</p></blockquote>
+<hr>
+<p>&lt;a id="۱۹"&gt;&lt;/a&gt;</p>
+<h2>۱۹) توالی دپولاریزاسیون بطنی و نام‌گذاری QRS</h2>
+<blockquote><p>🎙 <strong>استاد گفت:</strong></p><p>«در ابتدا <strong>دپولاریزاسیون سپتوم بین‌بطنی</strong> صورت می‌گیرد؛ از <strong>سمت چپ به راست</strong> و به سمت جلو. همین باعث می‌شود که در لیدهای چپ، موج کوچک <strong>منفی</strong> (موج q) ثبت شود.</p><p>بعد از آن، <strong>به‌صورت همزمان دو بطن</strong> دپلاریزه می‌شوند؛ انتشار از طریق شبکهٔ پورکینژ از <strong>اندوکارد به اپی‌کارد</strong> و در جهت راست به چپ انجام می‌شود — که نتیجه‌اش <strong>چرخش به سمت چپ و عقب</strong> و به‌دست آمدن موج <strong>مثبت R</strong> است.</p><p>در این شکل، <strong>نام‌گذاری انواع فرم‌هایی که کمپلکس QRS می‌تواند داشته باشد</strong> ملاحظه می‌شود:</p><p>اگر هر سه جزء را داشته باشیم: اولین قسمت منفی = <strong>موج Q</strong>، قسمت مثبت = <strong>موج R</strong>، قسمت منفی بعدی = <strong>موج S</strong>. اگر قسمت مثبت دومی وجود داشته باشد، <strong>'R</strong> نام‌گذاری می‌شود.</p><p>اگر ابتدای کمپلکس موج Q نداشته باشیم و فقط موج مثبت داشته باشیم، اسمش <strong>R</strong> است؛ و اگر بعد از آن فقط یک موج منفی داشته باشیم، <strong>S</strong> نام‌گذاری می‌کنند.</p><p>امواج را با <strong>حروف کوچک یا بزرگ</strong> می‌نویسند: اگر موج <strong>بزرگ</strong> باشد با <strong>حروف درشت</strong> (Q، R، S) و اگر <strong>کوچک</strong> باشد با <strong>حروف ریز</strong> (q، r، s).</p><p>همچنین در ردیف پایین انواع کمپلکس‌ها با وجود <strong>سگمنت ST</strong> نمایش داده شده — که آخرین شکل پایین سمت راست (U) است.»</p></blockquote>
+<blockquote><p>📊 <strong>اسلاید ۳۱ و ۳۳:</strong> QRS complex</p></blockquote>
+<p><strong>توالی دپولاریزاسیون بطنی:</strong></p>
+<ol><li><strong>سپتوم بین‌بطنی</strong> — از چپ به راست و به سمت جلو → موج <strong>q</strong> کوچک در لیدهای چپ</li><li><strong>هم‌زمان بطن راست و چپ</strong> — انتشار اندوکارد → اپی‌کارد، بردار کلی به <strong>چپ و عقب</strong> → موج <strong>R</strong></li></ol>
+<hr>
+<p>&lt;a id="۲۰"&gt;&lt;/a&gt;</p>
+<h2>۲۰) آنچه در QRS باید بررسی شود (چک‌لیست استاد)</h2>
+<blockquote><p>🎙 <strong>استاد گفت:</strong></p><p>«در تفسیر کمپلکس QRS باید به این موارد توجه کنیم:</p><p><strong>محور (Axis)</strong>؛ <strong>پیشرفت موج R</strong>؛ <strong>وجود موج Q پاتولوژیک</strong>؛ <strong>وجود موج دلتا</strong>؛ <strong>پهنای کمپلکس QRS</strong>؛ و <strong>ارتفاع (آمپلی‌تود) کمپلکس</strong>.</p><p>هر کدام از این‌ها نشان‌دهندهٔ یک <strong>بیماری/وضعیت خاص</strong> است.»</p></blockquote>
+<blockquote><p>📊 <strong>اسلاید ۳۳:</strong> QRS complex — Axis · R progression · Presence of pathologic q wave · Presence of delta wave · QRS width · QRS amplitude</p></blockquote>
+<table><thead><tr><th>#</th><th>مورد بررسی</th><th>معنای بالینی</th></tr></thead><tbody><tr><td>۱</td><td><strong>محور (Axis)</strong></td><td>انحراف چپ/راست → هیپرتروفی، بلوک فاسیکولار، انفارکتوس</td></tr><tr><td>۲</td><td><strong>پیشرفت موج R</strong></td><td>انفارکتوس قدیمی، بیماری ریوی، چرخش قلب</td></tr><tr><td>۳</td><td><strong>موج Q پاتولوژیک</strong></td><td>انفارکتوس میوکارد</td></tr><tr><td>۴</td><td><strong>موج دلتا</strong></td><td>مسیر فرعی (WPW)</td></tr><tr><td>۵</td><td><strong>پهنای QRS</strong></td><td>بلوک شاخه‌ای، VT، هیپرکالمی، داروها</td></tr><tr><td>۶</td><td><strong>آمپلی‌تود QRS</strong></td><td>هیپرتروفی (بالا) / افیوژن، COPD، چاقی (پایین)</td></tr></tbody></table>
+<hr>
+<p>&lt;a id="۲۱"&gt;&lt;/a&gt;</p>
+<h2>۲۱) پیشرفت موج R و ناحیهٔ گذر</h2>
+<blockquote><p>🎙 <strong>استاد گفت:</strong></p><p>«<strong>عضلهٔ بطن چپ بزرگ‌تر</strong> است و همین باعث می‌شود بردارها <strong>به‌سمت چپ</strong> باشند؛ پس <strong>موج R در لیدهای چپ بلندتر و در لیدهای راست کوچک‌تر</strong> است.</p><p>توالی این‌طور است: در <strong>V1</strong> یک موج <strong>r کوچک</strong> و <strong>S عمیق</strong> داریم. به‌تدریج که به سمت <strong>V5 و V6</strong> می‌رویم، <strong>ارتفاع R بیشتر</strong> می‌شود و <strong>عمق S کمتر</strong>.</p><p>جایی که <strong>R و S برابر</strong> می‌شوند، <strong>ناحیهٔ گذر (transition zone)</strong> است — معمولاً در <strong>V3 و V4</strong>.</p><p>اگر این برابری <strong>دیرتر</strong> اتفاق بیفتد (مثلاً در V5 یا V6)، یعنی <strong>تأخیر در پیشرفت موج R</strong>؛ این در بعضی بیماری‌ها مثل <strong>انفارکتوس قدیمی قدامی</strong>، <strong>نارسایی قلبی</strong> و اختلالات دیگر دیده می‌شود.»</p></blockquote>
+<blockquote><p>📊 <strong>اسلاید ۳۶:</strong> R wave progression (+ اسلاید ۳۵: الگوی RVH)</p></blockquote>
+<pre><code>V1:      r کوچک ، S عمیق
+V2:      r بزرگ‌تر ، S کم‌عمق‌تر
+V3–V4:   ناحیهٔ گذر (R ≈ S)   ← طبیعی
+V5–V6:   R بلند ، s کوچک</code></pre>
+<p><strong>پیشرفت غیرطبیعی R:</strong></p>
+<ul><li><strong>تأخیر گذر</strong> (transition در V5–V6) → انفارکتوس قدامی قدیمی، LBBB، بیماری ریوی، چرخش قلب</li><li><strong>پیشرفت ضعیف</strong> (R در V1–V4 بسیار کوچک) → انفارکتوس قدامی، COPD</li><li><strong>پیشرفت معکوس</strong> (R بلند در V1 = qR) → <strong>هیپرتروفی بطن راست</strong>، انفارکتوس خلفی، WPW</li></ul>
+<hr>
+<p>&lt;a id="۲۲"&gt;&lt;/a&gt;</p>
+<h2>۲۲) ادامهٔ درس — اسلایدهای ۳۷ تا ۶۶ (بدون روایت صوتی)</h2>
+<p>روی این اسلایدها <strong>صدا ضبط نشده</strong> (روایت فقط تا اسلاید ۳۶ موجود است)؛ این بخش خلاصهٔ <strong>متن دقیق خود اسلایدها</strong> است:</p>
+<h3>موج Q و تشخیص افتراقی (۳۷–۳۹)</h3>
+<ul><li><strong>q فیزیولوژیک:</strong> عرض ≤ ۰٫۰۴ s، عمق &lt; ۲۵٪ ارتفاع R</li><li>q طبیعی در <strong>V6</strong> (دپولاریزاسیون سپتوم) و در <strong>III</strong> مجاز است</li><li><strong>Q پاتولوژیک:</strong> عرض ≥ ۰٫۰۴ s یا عمق ≥ ۲۵٪ R در <strong>دو لید همجوار</strong></li><li><strong>تشخیص افتراقی Q غیرانفارکتی:</strong> LVH، چرخش قلب، آمبولی ریه/COPD، کاردیومیوپاتی، WPW، بیماری‌های عصبی-عضلانی</li></ul>
+<h3>ولتاژ QRS (۴۰)</h3>
+<ul><li><strong>ولتاژ پایین:</strong> &lt; ۵ mm در همهٔ لیدهای اندامی یا &lt; ۱۰ mm در همهٔ پرشی‌ها</li><li><strong>معیارهای LVH:</strong> <code>S(V1) + R(V5/V6) &gt; 35 mm</code> · <code>R(V5/V6) &gt; 25 mm</code> · مجموع QRS &gt; ۱۷۵ mm</li></ul>
+<h3>عرض QRS و بلوک‌های هدایتی (۴۵–۴۸)</h3>
+<ul><li><strong>QRS پهن:</strong> ≥ ۰٫۱۲ s → بلوک شاخه‌ای، ریتم بطنی، هیپرکالمی، داروهای ضدآریتمی</li><li><strong>RBBB:</strong> الگوی <code>RSR′</code> در V1 + S پهن در I و V6</li><li><strong>LBBB:</strong> R پهن/دندانه‌دار در I، aVL، V5، V6 + غیبت q سپتال + الگوی QS/rS در V1</li><li><strong>بلوک فاسیکولار:</strong> LAFB (انحراف چپ + qR در aVL) · LPFB (انحراف راست + rS در I)</li></ul>
+<h3>QRS قطعه‌قطعه (۴۹)</h3>
+<ul><li>حساسیت <strong>۸۶٪</strong> در برابر <strong>۳۶٪</strong> موج Q برای انفارکتوس</li><li>ویژگی <strong>۸۹٪</strong> در برابر <strong>۹۹٪</strong> — یعنی اختصاصی‌بودن کمتر</li></ul>
+<h3>قطعهٔ ST و ایسکمی (۵۰–۵۹)</h3>
+<ul><li>ST = <strong>فاز پلاتو</strong> پتانسیل عمل بطنی، از <strong>نقطهٔ J</strong> تا شروع <strong>موج T</strong></li><li><strong>افت ST</strong> → ایسکمی حاد · <strong>بالا رفتن ST</strong> → آسیب/انفارکتوس حاد</li></ul>
+<h3>موج T، U و QT (۶۰–۶۳)</h3>
+<ul><li><strong>T:</strong> رپولاریزاسیون بطنی — کندتر از دپولاریزاسیون، مثبت در بیشتر لیدها، منفی در aVR</li><li><strong>U:</strong> بعد از T، شایع‌ترین محل V2–V4، ≈ ¼ ارتفاع T، برجسته در <strong>هیپوکالمی</strong> و داروهای ضدآریتمی، <strong>افزایش‌دهندهٔ خطر VT</strong></li><li><strong>QT:</strong> از شروع QRS تا پایان T؛ باید <strong>QTc</strong> محاسبه شود (Bazett: <code>QTc = QT/√RR</code>) — افزایش آن خطر <strong>TdP</strong> دارد</li></ul>
+<h3>اختلالات متابولیک (۶۴–۶۶)</h3>
+<ul><li><strong>هیپرکالمی:</strong> موج T بلند و نوک‌تیز («چادری»)، کاهش/ناپدیدی P، پهن‌شدن QRS</li><li><strong>هیپوکالمی:</strong> موج U برجسته، T مسطح · <strong>هیپوکلسمی:</strong> QT طولانی · <strong>هیپرکلسمی:</strong> QT کوتاه</li></ul>
+<hr>
+<h2>واژه‌نامهٔ انگلیسی–فارسی</h2>
+<table><thead><tr><th>English</th><th>فارسی</th></tr></thead><tbody><tr><td>Electrocardiogram (ECG)</td><td>نوار قلب / الکتروکاردیوگرام</td></tr><tr><td>Limb / Precordial leads</td><td>لیدهای اندامی / پرشی</td></tr><tr><td>Bipolar / Augmented</td><td>دو-قطبی / تقویت‌شده</td></tr><tr><td>Axis · Contiguous leads</td><td>محور · لیدهای همجوار</td></tr><tr><td>Depolarization / Repolarization</td><td>دپولاریزاسیون / رپولاریزاسیون</td></tr><tr><td>Atrium / Ventricle / Septum</td><td>دهلیز / بطن / سپتوم</td></tr><tr><td>Ischemia / Infarction</td><td>ایسکمی / انفارکتوس</td></tr><tr><td>Arrhythmia · Bradycardia · Tachycardia</td><td>آریتمی · برادی‌کاردی · تاکی‌کاردی</td></tr><tr><td>Bundle branch block</td><td>بلوک شاخه‌ای</td></tr><tr><td>Fragmented QRS</td><td>QRS قطعه‌قطعه</td></tr><tr><td>Hypertrophy (LVH/RVH)</td><td>هایپرتروفی بطن چپ/راست</td></tr><tr><td>Hyperkalemia / Hypokalemia</td><td>هیپرکالمی / هیپوکالمی</td></tr><tr><td>Accessory pathway (WPW)</td><td>مسیر فرعی</td></tr><tr><td>Transition zone</td><td>ناحیهٔ گذر</td></tr></tbody></table>
+<hr>
+<h2>پیوست — از صدا تا جزوه</h2>
+<table><thead><tr><th>مورد</th><th>مقدار</th></tr></thead><tbody><tr><td>قطعه‌های صوتی</td><td>۳۱ فایل <code>.m4a</code> — <strong>۳۲:۰۷</strong></td></tr><tr><td>اسلایدهای دارای روایت</td><td><strong>۱ تا ۳۶</strong></td></tr><tr><td>موتور</td><td>Vosk فارسی <code>vosk-model-small-fa-0.42</code> + نویزگیری <code>afftdn</code> + نرمال‌سازی <code>loudnorm</code></td></tr><tr><td>متن خام</td><td><code>transcript-fa.md</code> / <code>transcript-fa.json</code> (۲۵٬۶۴۸ کاراکتر)</td></tr><tr><td>ترتیب روایت</td><td>مطابق نقشهٔ <code>slideN.xml.rels</code> در خود فایل pptx</td></tr></tbody></table>
+<blockquote><p>🔎 <strong>چه تلاشی برای مدل بهتر انجام شد؟</strong></p><p>HuggingFace و همهٔ آینه‌هایش (<code>hf-mirror</code>، <code>aifasthub</code> و …) از این محیط <strong>مسدود</strong>اند؛</p><p>تمام مدل‌های ggml بزرگ‌تر (base/small/medium) روی گیت‌هاب <strong>LFS pointer</strong> هستند (۱۳۳ بایت) و</p><p>دانلود LFS هم مسدود است؛ مدل‌های فارسی «شنوا» فقط روی HF میزبانی می‌شوند.</p><p>بنابراین بهترین پیکربندیِ ممکن — Vosk فارسی + نویزگیری — به‌کار رفت و</p><p>برای جبران خطاهای مدل، متن با <strong>کمک متن اسلایدها</strong> بازسازی و پاک‌سازی شد.</p></blockquote>
+<footer>ساخته‌شده با <b>voice-notes</b> — پیاده‌سازی صدا + اسلایدها</footer>
+</div></body></html>

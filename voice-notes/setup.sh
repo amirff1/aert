@@ -13,7 +13,8 @@ python3 -m venv "$VENV"
 "$VENV/bin/pip" install --quiet \
     numpy soundfile imageio-ffmpeg \
     pywhispercpp vosk python-pptx \
-    onnxruntime onnxruntime-extensions
+    onnxruntime onnxruntime-extensions \
+    pyrnnoise noisereduce wordfreq
 
 echo "→ بررسی نصب:"
 "$VENV/bin/python" - <<'PY'

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>گزارش دقت شنیدن صدا</title>
+<style>
+  :root { --ink:#1f2933; --muted:#52606d; --accent:#0f766e; --accent2:#b45309;
+          --bg:#f8fafc; --card:#fff; --line:#e4e7eb; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); line-height:2;
+         font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; }
+  .wrap { max-width:960px; margin:0 auto; padding:36px 22px 90px; }
+  h1 { font-size:2rem; color:var(--accent); border-bottom:3px solid var(--accent);
+       padding-bottom:12px; margin-bottom:6px; }
+  h2 { font-size:1.4rem; margin-top:44px; color:#134e4a; border-inline-start:5px solid var(--accent);
+       padding-inline-start:12px; }
+  h3 { font-size:1.12rem; margin-top:26px; color:#0e7490; }
+  h4 { font-size:1rem; margin-top:20px; }
+  p { margin:10px 0; }
+  a { color:var(--accent); }
+  table { border-collapse:collapse; width:100%; margin:14px 0; background:var(--card);
+          box-shadow:0 1px 2px rgba(0,0,0,.04); font-size:.95rem; }
+  th,td { border:1px solid var(--line); padding:8px 12px; text-align:right; vertical-align:top; }
+  th { background:#ecfdf5; color:#065f46; font-weight:700; }
+  tr:nth-child(even) td { background:#fbfdfc; }
+  ul,ol { padding-inline-start:24px; margin:8px 0; }
+  li { margin:4px 0; }
+  blockquote { margin:16px 0; background:#f0fdfa; border-inline-start:4px solid var(--accent);
+               border-radius:10px; padding:12px 16px; color:#134e4a; }
+  blockquote p { margin:6px 0; }
+  code { background:#f1f5f9; border:1px solid var(--line); border-radius:6px;
+         padding:1px 6px; font-family:ui-monospace,Menlo,Consolas,monospace; direction:ltr;
+         display:inline-block; font-size:.9em; }
+  pre { background:#0f172a; color:#e2e8f0; padding:14px 16px; border-radius:12px;
+        overflow-x:auto; direction:ltr; text-align:left; }
+  pre code { background:none; border:none; color:inherit; padding:0; }
+  hr { border:none; border-top:2px dashed var(--line); margin:36px 0; }
+  strong { color:#0b3d3a; }
+  .meta { color:var(--muted); font-size:.9rem; }
+  footer { margin-top:60px; color:var(--muted); font-size:.85rem; text-align:center;
+           border-top:1px solid var(--line); padding-top:18px; }
+  @media print { body{background:#fff} h2{page-break-after:avoid} table,blockquote{page-break-inside:avoid} }
+</style>
+</head>
+<body><div class="wrap">
+<h1>گزارش صادقانهٔ «دقتِ شنیدنِ صدا» — دکتر زادکمالی</h1>
+<blockquote><p>این گزارش می‌گوید برای <strong>دقیق‌تر فهمیدن حرف‌های استاد</strong> چه کارهایی انجام شد،</p><p>چه چیزی جواب داد، چه چیزی جواب نداد، و عددهای واقعی چه می‌گویند.</p><p>همهٔ مراحل با اسکریپت‌های همین مخزن قابل بازتولید است.</p></blockquote>
+<hr>
+<h2>۱) خلاصهٔ نتیجه در یک نگاه</h2>
+<table><thead><tr><th>معیار</th><th>نسل ۱ (اولیه)</th><th>نسل ۲ (دو مدل)</th><th><strong>نسل ۳ (رأی‌گیری ۴ جریانی)</strong></th></tr></thead><tbody><tr><td>روش</td><td>afftdn+loudnorm، یک مدل</td><td>پیک‌نرمال+RNNoise، دو مدل با انتخاب پنجره‌ای</td><td>۲ پیش‌پردازش × ۲ مدل + <strong>رأی‌گیری واژه‌به‌واژه</strong></td></tr><tr><td>تعداد واژه</td><td>۳٬۱۱۳</td><td>۴٬۶۴۳</td><td>۳٬۶۲۹ (۳٬۴۳۵ <strong>توافق‌شده</strong>)</td></tr><tr><td>نرخ واژه‌های موجود در واژه‌نامهٔ فارسی</td><td>۰٫۹۴۳</td><td>۰٫۹۴۵</td><td><strong>۰٫۹۴۹</strong> (توافقی: <strong>۰٫۹۵۱</strong>)</td></tr><tr><td>واژه‌های تأییدشده توسط ≥۲ جریان مستقل</td><td>—</td><td>—</td><td><strong>۷۷٫۵٪</strong></td></tr><tr><td>تعداد تصحیح واژگانی تخصصی</td><td>—</td><td>—</td><td>۸۵ مورد</td></tr></tbody></table>
+<p><strong>نکتهٔ مهم و صادقانه:</strong> نسل ۳ عمداً «محافظه‌کارتر» است؛ واژه‌هایی را که فقط یک جریان شنیده حذف/کم‌اعتبار می‌کند. به همین دلیل تعداد کل واژه‌ها از نسل ۲ کمتر، ولی <strong>دقت و اعتبار متن بیشتر</strong> است. برای جزوه، متنِ «توافق‌شده» منتشر می‌شود.</p>
+<hr>
+<h2>۲) چه چیزهایی امتحان شد که <strong>جواب نداد</strong> (و چرا)</h2>
+<table><thead><tr><th>مسیر</th><th>نتیجه</th></tr></thead><tbody><tr><td>جست‌وجوی کامل ایندکس PyPI (۹۱۱٬۳۱۳ بسته) و npm</td><td>هیچ بسته‌ای مدل فارسی همراه ندارد</td></tr><tr><td><code>crispasr</code> (۵۳MB)</td><td>فقط کد bindings است؛ هیچ مدلی درونش نیست (مدل‌ها باید از HF بیایند)</td></tr><tr><td><code>wenet-stt</code>, <code>rapidspeech</code>, <code>soda-stt</code>, <code>mozilla-voice-stt</code></td><td>بازرسی محتوای wheel: مدل فارسی ندارند (soda-stt فقط پرتغالی برزیل)</td></tr><tr><td>HuggingFace و همهٔ آینه‌ها (<code>hf-mirror</code>, <code>aifasthub</code>, …)</td><td>از این محیط مسدودند (خطای اتصال)</td></tr><tr><td>مدل‌های ggml بزرگ‌تر Whisper روی GitHub</td><td>فایل‌ها LFS pointer (۱۳۳ بایت) و دانلود LFS مسدود</td></tr><tr><td><code>deepfilternet</code> روی PyPI</td><td>بستهٔ ۰٫۲MB که مدل را از HF می‌گیرد → بی‌فایده</td></tr><tr><td>مدل «شنوا» (بهترین مدل فارسی)</td><td>فقط روی HF میزبانی می‌شود → دسترسی ندارد</td></tr></tbody></table>
+<h2>۳) چه چیزهایی جواب داد</h2>
+<p><strong>الف) کشف اصلی: صدا فوق‌العاده کم‌جان ضبط شده بود.</strong> اندازه‌گیری ۸ کلیپ: RMS بین <strong>−۴۷ تا −۵۴ دسی‌بل</strong> (میانگین −۵۱)؛ یعنی حدود ۴۰ دسی‌بل پایین‌تر از سطح طبیعی گفتار. این علت اصلی خطاهای مدل بود. مقایسهٔ A/B روی ۴ کلیپ (اطمینان Vosk):</p>
+<table><thead><tr><th>پیش‌پردازش</th><th>اطمینان</th><th>واژه‌های تخصصی یافته‌شده</th></tr></thead><tbody><tr><td>خام</td><td>۰٫۸۲۷</td><td>۷٫۵</td></tr><tr><td><code>loudnorm</code></td><td>۰٫۸۴۰</td><td>۷٫۸</td></tr><tr><td><strong>پیک‌نرمال به −۱dBFS</strong></td><td><strong>۰٫۸۵۱</strong></td><td><strong>۷٫۸</strong></td></tr><tr><td>پیک‌نرمال + RNNoise</td><td>۰٫۸۴۸</td><td>۷٫۵</td></tr></tbody></table>
+<p><strong>ب) نویزگیری RNNoise</strong> (بستهٔ <code>pyrnnoise</code> — مدل عصبی همراه بسته، بدون نیاز به دانلود). <strong>پ) ترکیب دو مدل فارسی موجود</strong> (vosk-small-fa-0.42 و 0.5) به‌جای تکیه بر یکی. <strong>ت) رأی‌گیری چهارجریانی (ROVER) با مهرِ زمانی واژه‌ها</strong> — هستهٔ نسل ۳.</p>
+<h2>۴) کاری که <em>انجام شد ولی برنده نشد</em> — و صادقانه گزارش می‌شود</h2>
+<p>مدل نویزگیری عصبیِ <strong>DeepFilterNet3 متا</strong> (همان «Hush») را از صفر به پایتون بردم:</p>
+<ul><li>مدل‌های ONNX (۸٫۸ مگابایت) از <code>mah92/hush_cpp</code> با clone فیلترشده گرفته شد</li></ul>
+<p>(raw.githubusercontent در این محیط مسدود است، ولی git clone کار می‌کند).</p>
+<ul><li>کل خط لوله (STFT با پنجرهٔ libdf، فیلتربانک ERB، نرمال‌سازی، سه شبکهٔ ONNX،</li></ul>
+<p>فیلتر DeepFilter، ISTFT) در <code>hush_denoise.py</code> پیاده شد.</p>
+<ul><li>در کد نمونهٔ C++ یک <strong>خطای علامت</strong> پیدا شد: فیلتر DF باید <em>تفریقی</em> باشد</li></ul>
+<p>(<code>y = x − Σ c·x</code>) نه جمعی. با اصلاح آن، اطمینان از ۰٫۷۱۷ به ۰٫۸۷۱ رسید.</p>
+<p>با این حال، <strong>RNNoise روی این صدا بهتر بود</strong> (میانگین اطمینان ۰٫۸۳۳ در برابر ۰٫۷۱۸ پیش از اصلاح و ۰٫۷۹ پس از آن) — چون مشکل این صدا «نویز شدید» نیست، «سطح خیلی کم» است. پس Hush به‌عنوان ابزار در مخزن ماند ولی در خط لولهٔ نهایی استفاده نشد.</p>
+<h2>۵) خط لولهٔ نهایی (نسل ۳) — چهار جریان مستقل</h2>
+<pre><code>فایل .m4a
+ ├─ جریان A: afftdn(nf=−25) + loudnorm → Vosk small-fa-0.42
+ ├─ جریان B: پیک‌نرمال(−1dBFS) + RNNoise → Vosk small-fa-0.42
+ ├─ جریان C: پیک‌نرمال(−1dBFS) + RNNoise → Vosk small-fa-0.5
+ └─ جریان D: afftdn + loudnorm          → Vosk small-fa-0.5
+        ↓
+ هم‌ترازی واژه‌به‌واژه با مهر زمانی (جریان مرجع = پرجزئیات‌ترین)
+        ↓
+ رأی‌گیری: برنده = بیشترین توافق، سپس بالاترین اطمینان
+        ↓
+ تصحیح واژگان تخصصی (۸۵ مورد): QRS، دپولاریزاسیون، گین، میلی‌ولت، محور، لید دو، موج دلتا …
+        ↓
+ متنِ توافقی (۷۷٫۵٪ واژه‌ها با تأیید ≥۲ جریان)</code></pre>
+<p>خروجی خام این مرحله: <code>transcript-fa-v2.md</code> و <code>transcript-fa-v2.json</code> (در JSON، هم متن کامل و هم متن توافقی، به‌همراه رای و اطمینان هر واژه).</p>
+<h2>۶) شاهدِ عینیِ بهبود</h2>
+<ul><li><strong>media29 (پایان بحث QRS):</strong> متن قدیم «وجود موج <strong>تا</strong> پهنای …» — متن جدید</li></ul>
+<p>«وجود موج <strong>دلتا</strong>». واژهٔ «دلتا» دقیقاً همان <strong>موج دلتای سندرم WPW</strong> است که در جزوه آمده و حالا از خودِ صدا هم تأیید می‌شود.</p>
+<ul><li><strong>media20 (محور):</strong> «لید دو» و بازهٔ «بین صفر و منفی ۳۰ درجه» بازیابی شد.</li><li><strong>media13 (استاندارد ثبت):</strong> «میلی‌متر بر ثانیه»، «میلی‌ولت» و «گین» درست شنیده شد.</li><li>در media8، پیش از نرمال‌سازی متن بی‌معنی بود («آرای ام آی») و بعد از آن</li></ul>
+<p>عبارت معنادار MI و بحث ایسکمی بیرون آمد.</p>
+<h2>۷) محدودیت‌ها (بدون پرده‌پوشی)</h2>
+<ol><li>هیچ مدل فارسیِ <strong>بهتری</strong> در دسترسِ این محیط نبود؛ بهبود از راه **پردازش سیگنال،</li></ol>
+<p>ترکیب جریان‌ها و تصحیح واژگانی** به‌دست آمد، نه از راه مدل بزرگ‌تر.</p>
+<ol><li>متن حاصلِ رأی‌گیری هنوز <strong>بی‌خطا نیست</strong>؛ روی اصطلاحات تخصصی انگلیسی</li></ol>
+<p>(RBBB، fragmented QRS، …) خطا باقی است. برای استناد دقیق، فایل صوتی را بشنوید.</p>
+<ol><li>نقل‌قول‌های داخل <code>joze-voice.md</code> <strong>بازسازی و پاک‌سازی‌شدهٔ</strong> گفتار است، نه</li></ol>
+<p>نقل‌قولِ کلمه‌به‌کلمه؛ این نسخه با متن جدید بازبینی شد.</p>
+<ol><li>«نرخ واژه‌های واژه‌نامه‌ای» یک معیار جانشین است، نه WER واقعی — چون متن</li></ol>
+<p>مرجع انسانی برای این صدا وجود ندارد.</p>
+<h2>۸) بازتولید</h2>
+<pre><code>bash voice-notes/setup.sh                      # نصب بسته‌ها + دانلود مدل‌ها
+python3 voice-notes/fa_pipeline3.py            # ۴ جریان + رأی‌گیری
+python3 voice-notes/fa_rover_report.py         # متن نهایی + معیارها
+python3 voice-notes/correct_fa.py --in DIR --out DIR   # تصحیح واژگانی
+python3 voice-notes/hush_denoise.py in.wav out.wav     # نویزگیر Hush/DF3 (اختیاری)</code></pre>
+<footer>ساخته‌شده با <b>voice-notes</b> — پیاده‌سازی صدا + اسلایدها</footer>
+</div></body></html>

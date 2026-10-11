@@ -76,6 +76,22 @@ else
   ls -la "$MODELS_DIR/whisper-onnx/"
 fi
 
+# ------------------------------------------------- ۵) Hush / DeepFilterNet3 (ONNX)
+# مدل‌های نویزگیری عصبیِ DF3 (آموزش‌دیدهٔ Meta). فایل‌های ONNX فقط با clone فیلترشده
+# قابل دریافت‌اند (raw.githubusercontent و release-assets در این محیط مسدودند).
+HUSH_DIR="${HUSH_DIR:-/home/user/.cache/hush}"
+if [ -s "$HUSH_DIR/onnx/enc.onnx" ] && [ -s "$HUSH_DIR/onnx/df_dec.onnx" ]; then
+  echo "✓ مدل‌های Hush موجودند در $HUSH_DIR/onnx"
+else
+  echo "→ دریافت مدل‌های Hush (DF3 ONNX ~۸.۸MB)"
+  rm -rf "$HUSH_DIR"
+  git clone --quiet --filter=blob:none --no-checkout --depth 1 \
+      https://github.com/mah92/hush_cpp "$HUSH_DIR"
+  git -C "$HUSH_DIR" sparse-checkout set --no-cone onnx src
+  git -C "$HUSH_DIR" checkout --quiet
+  ls -la "$HUSH_DIR/onnx"
+fi
+
 echo
 echo "✓ همهٔ مدل‌ها آماده‌اند در: $MODELS_DIR"
 du -sh "$MODELS_DIR"/* 2>/dev/null || true

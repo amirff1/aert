@@ -62,7 +62,20 @@ bash voice-notes/joze.sh my-presentation.pptx --language fa --title "جزوهٔ 
 | `pptx_extract.py` | متن اسلایدها + نُت گوینده + فهرست مدیای جاسازی‌شده → `slides.md` و `slides.json` |
 | `make_joze.py` | اسلایدها + متن صدا → جزوهٔ چکیده‌دار با واژه‌های کلیدی (Markdown + HTML راست‌به‌چپ) |
 | `joze.sh` | اجرای کل زنجیره با یک فرمان |
-| `setup.sh` / `fetch_models.sh` | نصب محیط و دانلود مدل‌ها |
+| `setup.sh` / `fetch_models.sh` | نصب محیط و دانلود مدل‌ها (شامل مدل‌های Hush/DF3) |
+
+### ابزارهای «دقت بیشتر» (افزودهٔ بعدی)
+
+| فایل | کار |
+|---|---|
+| `fa_pipeline2.py` | دو مدل فارسی + انتخاب پنجره‌ای بر اساس اطمینان |
+| `fa_pipeline3.py` / `fa_pipeline4.py` | **رأی‌گیری چندجریانی (ROVER)**: ۴ و ۶ جریان مستقل با هم‌ترازی مهرِ زمانی |
+| `fa_rover_report.py` | متن نهایی + معیارهای دقت (`transcript-fa-v3.*`, `accuracy-v3.json`) |
+| `correct_fa.py` | تصحیح واژگان تخصصی فارسی بر پایهٔ قواعد دامنه |
+| `make_evidence.py` | ساخت کارت شواهد هر قطعه (اسلاید + متن + واژه‌های مشکوک با جایگزین) |
+| `rnnoise_dn.py` | نویزگیری RNNoise (رفع اشکال `denoise_wav` در pyrnnoise) |
+| `hush_denoise.py` | **پورت پایتونی نویزگیر عصبی Hush/DeepFilterNet3** (ONNX Runtime) |
+| `ab_denoise.py` | مقایسهٔ A/B روش‌های پیش‌پردازش |
 
 ## مدل‌ها کجا ذخیره می‌شوند؟
 

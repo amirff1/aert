@@ -15,7 +15,9 @@ sys.path.insert(0, '/home/user/aert/voice-notes')
 from correct_fa import apply_rules
 
 W = Path('/home/user/work/zadkamali')
-FA3 = W / 'fa3_out'
+import os as _os
+FA3 = W / _os.environ.get('ROVER_DIR', 'fa3_out')
+STEM = _os.environ.get('ROVER_OUT', 'transcript-fa-v2')
 
 
 def known_ratio(text: str, known: set) -> float:
@@ -74,12 +76,12 @@ def main() -> None:
                           'words': d3['words'], 'stats': d3['stats'],
                           'corrections': changes, 'slide': rows[-1]['slide']}
 
-    (W / 'transcript-fa-v2.json').write_text(json.dumps(out_json, ensure_ascii=False, indent=1),
+    (W / f'{STEM}.json').write_text(json.dumps(out_json, ensure_ascii=False, indent=1),
                                              encoding='utf-8')
 
     # --- مارک‌داون خوانا (اسلاید به اسلاید)
-    md = ['# پیاده‌سازی روایت استاد — نسخهٔ ۲ (رأی‌گیری چهارجریانی)', '',
-          '> هر قطعه با **۴ جریان مستقل** پیاده شد (۲ پیش‌پردازش × ۲ مدل فارسی Vosk) و واژه‌ها',
+    md = [f'# پیاده‌سازی روایت استاد — {STEM}', '',
+          '> هر قطعه با چند **جریان مستقل** پیاده شد (پیش‌پردازش‌های مختلف × دو مدل فارسی Vosk) و واژه‌ها',
           '> واژه‌به‌واژه با مهر زمانی هم‌تراز و با رأی اکثریت انتخاب شدند؛ سپس واژگان تخصصی تصحیح شد.',
           '> ستون «توافق» = سهم واژه‌هایی که حداقل ۲ جریان روی آن‌ها توافق داشتند.', '']
     n_words = sum(r['words_v3'] for r in rows)
@@ -91,7 +93,7 @@ def main() -> None:
         md.append('')
         md.append(d['text_consensus'])
         md.append('')
-    (W / 'transcript-fa-v2.md').write_text('\n'.join(md), encoding='utf-8')
+    (W / f'{STEM}.md').write_text('\n'.join(md), encoding='utf-8')
 
     # --- معیارهای کلی
     acc = {
@@ -108,7 +110,7 @@ def main() -> None:
         'corrections_total': sum(r['changes'] for r in rows),
         'per_clip': rows,
     }
-    (W / 'accuracy.json').write_text(json.dumps(acc, ensure_ascii=False, indent=1), encoding='utf-8')
+    (W / f'accuracy{"" if STEM.endswith("v2") else "-v3"}.json').write_text(json.dumps(acc, ensure_ascii=False, indent=1), encoding='utf-8')
 
     print(f"واژه‌ها: v1={acc['words']['v1_old_pipeline']}  "
           f"v2={acc['words']['v2_dual_model']}  v3(ROVER)={acc['words']['v3_rover']}")

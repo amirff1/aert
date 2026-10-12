@@ -35,7 +35,24 @@ EMOJI_MAP = {
     '🟢': ' [اطمینان: بالا]', '🟡': ' [اطمینان: متوسط]', '🔴': ' [اطمینان: کم]',
     '⏱': 'زمان:', '→': '>', '←': '<', '↑': '^', '↓': 'v', '⇒': '=>',
     '🙂': '', '😊': '', '✨': '', '🔥': '', '📄': '', '📁': '', '🚀': '',
+    '✔': '√', '🎯': '٭', '🔉': '', '🗣': '', '🧩': '', '✅': '√', '❌': '×',
+    '📋': '', '🧠': '', '📝': '', '🔬': '', '⏲': 'زمان:', '⚡': '', '💬': '',
 }
+_FALLBACK = {'✔': '√', '🎯': '٭', '✅': '√', '❌': '×', '▪': '•', '●': '•', '◆': '•', '■': '•'}
+_CMAP: set[int] | None = None
+
+
+def _cmap() -> set[int]:
+    """گلیف‌های موجود در فونت وزیرمتن (برای حذف نویسه‌های بی‌گلیف)"""
+    global _CMAP
+    if _CMAP is None:
+        from fontTools.ttLib import TTFont
+        f = TTFont(str(FONT_DIR / 'Vazirmatn-Regular.ttf'))
+        s: set[int] = set()
+        for t in f['cmap'].tables:
+            s |= set(t.cmap.keys())
+        _CMAP = s
+    return _CMAP
 ARROW_RE = re.compile('|'.join(re.escape(k) for k in sorted(EMOJI_MAP, key=len, reverse=True)))
 
 
@@ -49,7 +66,19 @@ def clean(text: str) -> str:
     text = text.replace('<br>', ' / ').replace('<', '‹').replace('>', '›')
     text = re.sub(r'`([^`]*)`', r'\1', text)
     text = re.sub(r'\[([^\]]+)\]\([^)]*\)', r'\1', text)          # حذف پیوندها
-    return text
+    # هر نویسهٔ بی‌گلیف را با جانشین امن/خالی عوض کن (تا مربع خالی چاپ نشود)
+    cm = _cmap()
+    out_chars, dropped = [], set()
+    for ch in text:
+        if ch in '\n\t' or ord(ch) in cm:
+            out_chars.append(ch)
+        elif ch in _FALLBACK:
+            out_chars.append(_FALLBACK[ch])
+        else:
+            dropped.add(ch)
+    if dropped:
+        print('   ℹ️ نویسه‌های بی‌گلیف حذف شد:', ' '.join(sorted(dropped)))
+    return ''.join(out_chars)
 
 
 class JozePDF(FPDF):

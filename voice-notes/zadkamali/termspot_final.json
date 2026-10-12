@@ -1,0 +1,3723 @@
+[
+ {
+  "clip": "media10",
+  "t": 1.2,
+  "heard": "ام‌آی",
+  "canon": "MI",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "اعمال",
+   "s": 0.6,
+   "src": "speechnorm_fa042",
+   "conf": 0.44
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "ام‌آی",
+  "display": "MI"
+ },
+ {
+  "clip": "media10",
+  "t": 20.76,
+  "heard": "لیدها",
+  "canon": "لیدها",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "لیدها",
+   "s": 20.8,
+   "src": "speechnorm_fa042",
+   "conf": 0.82
+  },
+  "perm_rate": 0.0,
+  "display": "لیدها"
+ },
+ {
+  "clip": "media10",
+  "t": 28.23,
+  "heard": "axis",
+  "canon": "axis",
+  "model": "en",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "عکس",
+   "s": 28.2,
+   "src": "speechnorm_fa042",
+   "conf": 0.68
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "axis",
+  "display": "Axis"
+ },
+ {
+  "clip": "media10",
+  "t": 36.48,
+  "heard": "نود",
+  "canon": "node",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "نود",
+   "s": 36.4,
+   "src": "dynaudnorm_fa05",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "نود",
+  "display": "Node"
+ },
+ {
+  "clip": "media10",
+  "t": 39.6,
+  "heard": "عکسی",
+  "canon": "axis",
+  "model": "fa",
+  "conf": 0.587,
+  "supported": true,
+  "evidence": {
+   "w": "عکس",
+   "s": 39.6,
+   "src": "speechnorm_fa042",
+   "conf": 0.3
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "عکسی",
+  "display": "Axis"
+ },
+ {
+  "clip": "media10",
+  "t": 46.68,
+  "heard": "ولتاژ",
+  "canon": "voltage",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "ولتاژ",
+   "s": 46.7,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "ولتاژ",
+  "display": "Voltage"
+ },
+ {
+  "clip": "media10",
+  "t": 56.19,
+  "heard": "عکسی",
+  "canon": "axis",
+  "model": "fa",
+  "conf": 0.611,
+  "supported": true,
+  "evidence": {
+   "w": "سی",
+   "s": 56.2,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "عکسی",
+  "display": "Axis"
+ },
+ {
+  "clip": "media11",
+  "t": 10.62,
+  "heard": "فاصله",
+  "canon": "فاصله",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "فواصلی",
+   "s": 10.4,
+   "src": "speechnorm_fa042",
+   "conf": 0.9
+  },
+  "perm_rate": 0.0,
+  "display": "فاصله (interval)"
+ },
+ {
+  "clip": "media11",
+  "t": 12.47,
+  "heard": "ایزو",
+  "canon": "ایزو",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "ایزو",
+   "s": 12.4,
+   "src": "dynaudnorm_fa05",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "display": "ایزو (isoelectric)"
+ },
+ {
+  "clip": "media11",
+  "t": 24.72,
+  "heard": "سگمنت",
+  "canon": "segment",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "سگمنت",
+   "s": 26.2,
+   "src": "speechnorm_fa042",
+   "conf": 0.66
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "سگمنت",
+  "display": "Segment"
+ },
+ {
+  "clip": "media11",
+  "t": 26.22,
+  "heard": "segment",
+  "canon": "segment",
+  "model": "en",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "سگمنت",
+   "s": 26.2,
+   "src": "speechnorm_fa042",
+   "conf": 0.66
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "segment",
+  "display": "Segment"
+ },
+ {
+  "clip": "media13",
+  "t": 12.9,
+  "heard": "اسکیل",
+  "canon": "scale",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "اسکلۀ",
+   "s": 12.9,
+   "src": "speechnorm_fa042",
+   "conf": 0.65
+  },
+  "perm_rate": 0.2,
+  "mapped_from": "اسکیل",
+  "display": "Scale"
+ },
+ {
+  "clip": "media13",
+  "t": 18.72,
+  "heard": "speed",
+  "canon": "speed",
+  "model": "en",
+  "conf": 0.907,
+  "supported": true,
+  "evidence": {
+   "w": "اسپید",
+   "s": 18.6,
+   "src": "speechnorm_fa042",
+   "conf": 0.86
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "speed",
+  "display": "Speed"
+ },
+ {
+  "clip": "media13",
+  "t": 21.84,
+  "heard": "gain",
+  "canon": "gain",
+  "model": "en",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "این",
+   "s": 22.0,
+   "src": "dynaudnorm_fa05",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "gain",
+  "display": "Gain"
+ },
+ {
+  "clip": "media13",
+  "t": 21.84,
+  "heard": "گین",
+  "canon": "gain",
+  "model": "fa",
+  "conf": 0.589,
+  "supported": true,
+  "evidence": {
+   "w": "این",
+   "s": 22.0,
+   "src": "dynaudnorm_fa05",
+   "conf": 1.0
+  },
+  "perm_rate": 0.2,
+  "mapped_from": "گین",
+  "display": "Gain"
+ },
+ {
+  "clip": "media13",
+  "t": 22.41,
+  "heard": "ولتاژ",
+  "canon": "voltage",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "ولتاژ",
+   "s": 22.4,
+   "src": "speechnorm_fa042",
+   "conf": 0.61
+  },
+  "perm_rate": 0.2,
+  "mapped_from": "ولتاژ",
+  "display": "Voltage"
+ },
+ {
+  "clip": "media13",
+  "t": 28.77,
+  "heard": "standard",
+  "canon": "standard",
+  "model": "en",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "استاندارد",
+   "s": 28.6,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "standard",
+  "display": "Standard"
+ },
+ {
+  "clip": "media13",
+  "t": 33.36,
+  "heard": "گین",
+  "canon": "gain",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "این",
+   "s": 33.6,
+   "src": "speechnorm_fa042",
+   "conf": 0.87
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "گین",
+  "display": "Gain"
+ },
+ {
+  "clip": "media13",
+  "t": 38.31,
+  "heard": "میلی",
+  "canon": "میلی",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "میلی",
+   "s": 38.3,
+   "src": "speechnorm_fa042",
+   "conf": 0.98
+  },
+  "perm_rate": 0.2,
+  "display": "میلی (mV)"
+ },
+ {
+  "clip": "media13",
+  "t": 38.55,
+  "heard": "وات",
+  "canon": "وات",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "وات",
+   "s": 38.5,
+   "src": "speechnorm_fa042",
+   "conf": 0.98
+  },
+  "perm_rate": 0.0,
+  "display": "وات (W)"
+ },
+ {
+  "clip": "media13",
+  "t": 41.82,
+  "heard": "جین",
+  "canon": "gain",
+  "model": "fa",
+  "conf": 0.763,
+  "supported": true,
+  "evidence": {
+   "w": "چین",
+   "s": 41.9,
+   "src": "afftdn_fa05",
+   "conf": 0.31
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "جین",
+  "display": "Gain"
+ },
+ {
+  "clip": "media13",
+  "t": 44.07,
+  "heard": "gain",
+  "canon": "gain",
+  "model": "en",
+  "conf": 0.724,
+  "supported": true,
+  "evidence": {
+   "w": "گریم",
+   "s": 44.1,
+   "src": "speechnorm_fa042",
+   "conf": 0.77
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "gain",
+  "display": "Gain"
+ },
+ {
+  "clip": "media13",
+  "t": 44.85,
+  "heard": "اسپید",
+  "canon": "speed",
+  "model": "fa",
+  "conf": 0.782,
+  "supported": true,
+  "evidence": {
+   "w": "اسپید",
+   "s": 44.8,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.2,
+  "mapped_from": "اسپید",
+  "display": "Speed"
+ },
+ {
+  "clip": "media13",
+  "t": 44.88,
+  "heard": "speed",
+  "canon": "speed",
+  "model": "en",
+  "conf": 0.895,
+  "supported": true,
+  "evidence": {
+   "w": "اسپید",
+   "s": 44.8,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.2,
+  "mapped_from": "speed",
+  "display": "Speed"
+ },
+ {
+  "clip": "media13",
+  "t": 45.3,
+  "heard": "standard",
+  "canon": "standard",
+  "model": "en",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "استاندارد",
+   "s": 45.2,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "standard",
+  "display": "Standard"
+ },
+ {
+  "clip": "media13",
+  "t": 52.5,
+  "heard": "ولتاژ",
+  "canon": "voltage",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "ولتاژ",
+   "s": 52.7,
+   "src": "speechnorm_fa042",
+   "conf": 0.86
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "ولتاژ",
+  "display": "Voltage"
+ },
+ {
+  "clip": "media13",
+  "t": 52.68,
+  "heard": "voltage",
+  "canon": "voltage",
+  "model": "en",
+  "conf": 0.566,
+  "supported": true,
+  "evidence": {
+   "w": "ولتاژ",
+   "s": 52.7,
+   "src": "speechnorm_fa042",
+   "conf": 0.86
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "voltage",
+  "display": "Voltage"
+ },
+ {
+  "clip": "media13",
+  "t": 52.68,
+  "heard": "ولت",
+  "canon": "ولت",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "ولتاژ",
+   "s": 52.7,
+   "src": "speechnorm_fa042",
+   "conf": 0.86
+  },
+  "perm_rate": 0.0,
+  "display": "ولت (V)"
+ },
+ {
+  "clip": "media13",
+  "t": 53.34,
+  "heard": "گنگ",
+  "canon": "gain",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "گنگ",
+   "s": 53.3,
+   "src": "speechnorm_fa042",
+   "conf": 0.79
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "گنگ",
+  "display": "Gain"
+ },
+ {
+  "clip": "media13",
+  "t": 53.34,
+  "heard": "گین",
+  "canon": "gain",
+  "model": "fa",
+  "conf": 0.616,
+  "supported": true,
+  "evidence": {
+   "w": "این",
+   "s": 52.5,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "گین",
+  "display": "Gain"
+ },
+ {
+  "clip": "media13",
+  "t": 53.37,
+  "heard": "gain",
+  "canon": "gain",
+  "model": "en",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "این",
+   "s": 52.5,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.2,
+  "mapped_from": "gain",
+  "display": "Gain"
+ },
+ {
+  "clip": "media13",
+  "t": 58.08,
+  "heard": "ام‌آی",
+  "canon": "MI",
+  "model": "fa",
+  "conf": 0.912,
+  "supported": true,
+  "evidence": {
+   "w": "امواج",
+   "s": 57.8,
+   "src": "speechnorm_fa042",
+   "conf": 0.89
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "ام‌آی",
+  "display": "MI"
+ },
+ {
+  "clip": "media13",
+  "t": 69.54,
+  "heard": "gain",
+  "canon": "gain",
+  "model": "en",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "این",
+   "s": 69.4,
+   "src": "speechnorm_fa042",
+   "conf": 0.89
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "gain",
+  "display": "Gain"
+ },
+ {
+  "clip": "media13",
+  "t": 69.54,
+  "heard": "گین",
+  "canon": "gain",
+  "model": "fa",
+  "conf": 0.834,
+  "supported": true,
+  "evidence": {
+   "w": "این",
+   "s": 69.4,
+   "src": "speechnorm_fa042",
+   "conf": 0.89
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "گین",
+  "display": "Gain"
+ },
+ {
+  "clip": "media13",
+  "t": 70.92,
+  "heard": "گنگ",
+  "canon": "gain",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "گنگ",
+   "s": 69.5,
+   "src": "speechnorm_fa042",
+   "conf": 0.38
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "گنگ",
+  "display": "Gain"
+ },
+ {
+  "clip": "media13",
+  "t": 73.8,
+  "heard": "ولتاژ",
+  "canon": "voltage",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "ولتاژ",
+   "s": 73.9,
+   "src": "dynaudnorm_fa05",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "ولتاژ",
+  "display": "Voltage"
+ },
+ {
+  "clip": "media13",
+  "t": 81.99,
+  "heard": "اسپید",
+  "canon": "speed",
+  "model": "fa",
+  "conf": 0.842,
+  "supported": true,
+  "evidence": {
+   "w": "اسپید",
+   "s": 82.0,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "اسپید",
+  "display": "Speed"
+ },
+ {
+  "clip": "media13",
+  "t": 84.42,
+  "heard": "اسپیده",
+  "canon": "speed",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "اسپیده",
+   "s": 84.4,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "اسپیده",
+  "display": "Speed"
+ },
+ {
+  "clip": "media13",
+  "t": 84.6,
+  "heard": "speed",
+  "canon": "speed",
+  "model": "en",
+  "conf": 0.637,
+  "supported": true,
+  "evidence": {
+   "w": "اسپیده",
+   "s": 84.4,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "speed",
+  "display": "Speed"
+ },
+ {
+  "clip": "media13",
+  "t": 106.08,
+  "heard": "فاصله",
+  "canon": "فاصله",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "فاصله‏ی",
+   "s": 106.1,
+   "src": "speechnorm_fa042",
+   "conf": 0.46
+  },
+  "perm_rate": 0.0,
+  "display": "فاصله (interval)"
+ },
+ {
+  "clip": "media13",
+  "t": 119.34,
+  "heard": "میلی",
+  "canon": "میلی",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "می",
+   "s": 119.3,
+   "src": "dynaudnorm_fa05",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "display": "میلی (mV)"
+ },
+ {
+  "clip": "media13",
+  "t": 125.1,
+  "heard": "ولت",
+  "canon": "ولت",
+  "model": "fa",
+  "conf": 0.88,
+  "supported": true,
+  "evidence": {
+   "w": "حالت",
+   "s": 125.1,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "display": "ولت (V)"
+ },
+ {
+  "clip": "media13",
+  "t": 128.31,
+  "heard": "اسکیل",
+  "canon": "scale",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "اسکر",
+   "s": 128.3,
+   "src": "speechnorm_fa042",
+   "conf": 0.42
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "اسکیل",
+  "display": "Scale"
+ },
+ {
+  "clip": "media13",
+  "t": 150.0,
+  "heard": "کیآراس",
+  "canon": "QRS",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "چی",
+   "s": 150.5,
+   "src": "speechnorm_fa042",
+   "conf": 0.4
+  },
+  "perm_rate": 0.2,
+  "t_end": 150.72,
+  "chain": [
+   "کی",
+   "آر",
+   "اس"
+  ],
+  "display": "QRS"
+ },
+ {
+  "clip": "media13",
+  "t": 154.32,
+  "heard": "میلی",
+  "canon": "میلی",
+  "model": "fa",
+  "conf": 0.709,
+  "supported": true,
+  "evidence": {
+   "w": "میلی",
+   "s": 154.3,
+   "src": "dynaudnorm_fa05",
+   "conf": 0.64
+  },
+  "perm_rate": 0.2,
+  "display": "میلی (mV)"
+ },
+ {
+  "clip": "media13",
+  "t": 168.75,
+  "heard": "جین",
+  "canon": "gain",
+  "model": "fa",
+  "conf": 0.596,
+  "supported": true,
+  "evidence": {
+   "w": "این",
+   "s": 168.9,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "جین",
+  "display": "Gain"
+ },
+ {
+  "clip": "media13",
+  "t": 171.21,
+  "heard": "اسکیل",
+  "canon": "scale",
+  "model": "fa",
+  "conf": 0.936,
+  "supported": true,
+  "evidence": {
+   "w": "اصل",
+   "s": 171.2,
+   "src": "dynaudnorm_fa05",
+   "conf": 0.52
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "اسکیل",
+  "display": "Scale"
+ },
+ {
+  "clip": "media13",
+  "t": 171.27,
+  "heard": "scale",
+  "canon": "scale",
+  "model": "en",
+  "conf": 0.621,
+  "supported": true,
+  "evidence": {
+   "w": "اصل",
+   "s": 171.2,
+   "src": "dynaudnorm_fa05",
+   "conf": 0.52
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "scale",
+  "display": "Scale"
+ },
+ {
+  "clip": "media14",
+  "t": 40.89,
+  "heard": "سینوس",
+  "canon": "sinus",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "سینوسی",
+   "s": 40.9,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "سینوس",
+  "display": "Sinus"
+ },
+ {
+  "clip": "media14",
+  "t": 43.08,
+  "heard": "کیارس",
+  "canon": "QRS",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "پرس",
+   "s": 42.8,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.2,
+  "mapped_from": "کیارس",
+  "display": "QRS"
+ },
+ {
+  "clip": "media14",
+  "t": 51.42,
+  "heard": "سینوسی",
+  "canon": "sinus",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "سینوسی",
+   "s": 51.4,
+   "src": "speechnorm_fa042",
+   "conf": 0.78
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "سینوسی",
+  "display": "Sinus"
+ },
+ {
+  "clip": "media14",
+  "t": 54.63,
+  "heard": "کی",
+  "canon": "کی",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "کی‌های",
+   "s": 54.6,
+   "src": "speechnorm_fa042",
+   "conf": 0.46
+  },
+  "perm_rate": 0.0,
+  "display": "کی"
+ },
+ {
+  "clip": "media14",
+  "t": 55.14,
+  "heard": "گریم",
+  "canon": "gain",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "داریم",
+   "s": 55.1,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "گریم",
+  "display": "Gain"
+ },
+ {
+  "clip": "media14",
+  "t": 67.95,
+  "heard": "آریتمی",
+  "canon": "arrhythmia",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "آریتمی",
+   "s": 68.0,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.4,
+  "mapped_from": "آریتمی",
+  "display": "Arrhythmia"
+ },
+ {
+  "clip": "media15",
+  "t": 1.56,
+  "heard": "ایزو",
+  "canon": "ایزو",
+  "model": "fa",
+  "conf": 0.56,
+  "supported": true,
+  "evidence": {
+   "w": "از",
+   "s": 2.1,
+   "src": "peakrn_fa042",
+   "conf": 0.69
+  },
+  "perm_rate": 0.0,
+  "display": "ایزو (isoelectric)"
+ },
+ {
+  "clip": "media15",
+  "t": 54.0,
+  "heard": "میلی",
+  "canon": "میلی",
+  "model": "fa",
+  "conf": 0.983,
+  "supported": true,
+  "evidence": {
+   "w": "خیلی",
+   "s": 54.0,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "display": "میلی (mV)"
+ },
+ {
+  "clip": "media15",
+  "t": 85.99,
+  "heard": "کیارس",
+  "canon": "QRS",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "کارش",
+   "s": 86.0,
+   "src": "speechnorm_fa042",
+   "conf": 0.41
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "کیارس",
+  "display": "QRS"
+ },
+ {
+  "clip": "media15",
+  "t": 102.09,
+  "heard": "گریم",
+  "canon": "gain",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "بگیریم",
+   "s": 102.0,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "گریم",
+  "display": "Gain"
+ },
+ {
+  "clip": "media16",
+  "t": 21.6,
+  "heard": "کیارس",
+  "canon": "QRS",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "کیارس",
+   "s": 21.7,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.2,
+  "mapped_from": "کیارس",
+  "display": "QRS"
+ },
+ {
+  "clip": "media16",
+  "t": 27.0,
+  "heard": "برانچ",
+  "canon": "bundle branch block",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "برنا",
+   "s": 25.9,
+   "src": "dynaudnorm_fa05",
+   "conf": 0.7
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "برانچ",
+  "display": "Bundle branch block"
+ },
+ {
+  "clip": "media16",
+  "t": 28.8,
+  "heard": "بطنی",
+  "canon": "بطنی",
+  "model": "fa",
+  "conf": 0.583,
+  "supported": true,
+  "evidence": {
+   "w": "بتونیم",
+   "s": 28.8,
+   "src": "speechnorm_fa042",
+   "conf": 0.4
+  },
+  "perm_rate": 0.0,
+  "display": "بطنی"
+ },
+ {
+  "clip": "media16",
+  "t": 37.92,
+  "heard": "scale",
+  "canon": "scale",
+  "model": "en",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "اسرائیل",
+   "s": 37.9,
+   "src": "speechnorm_fa042",
+   "conf": 0.72
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "scale",
+  "display": "Scale"
+ },
+ {
+  "clip": "media16",
+  "t": 39.6,
+  "heard": "گین",
+  "canon": "gain",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "جین",
+   "s": 39.6,
+   "src": "peakrn_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "گین",
+  "display": "Gain"
+ },
+ {
+  "clip": "media16",
+  "t": 39.66,
+  "heard": "جین",
+  "canon": "gain",
+  "model": "fa",
+  "conf": 0.946,
+  "supported": true,
+  "evidence": {
+   "w": "جین",
+   "s": 39.6,
+   "src": "peakrn_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.2,
+  "mapped_from": "جین",
+  "display": "Gain"
+ },
+ {
+  "clip": "media16",
+  "t": 46.05,
+  "heard": "اسکیل",
+  "canon": "scale",
+  "model": "fa",
+  "conf": 0.826,
+  "supported": true,
+  "evidence": {
+   "w": "اسکله",
+   "s": 46.0,
+   "src": "dynaudnorm_fa05",
+   "conf": 0.48
+  },
+  "perm_rate": 0.4,
+  "mapped_from": "اسکیل",
+  "display": "Scale"
+ },
+ {
+  "clip": "media16",
+  "t": 55.8,
+  "heard": "سپتوم",
+  "canon": "septum",
+  "model": "fa",
+  "conf": 0.912,
+  "supported": true,
+  "evidence": {
+   "w": "سیستم",
+   "s": 56.5,
+   "src": "dynaudnorm_fa05",
+   "conf": 0.32
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "سپتوم",
+  "display": "Septum"
+ },
+ {
+  "clip": "media16",
+  "t": 58.77,
+  "heard": "دلتا",
+  "canon": "delta wave",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "دلت",
+   "s": 58.8,
+   "src": "afftdn_fa05",
+   "conf": 0.82
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "دلتا",
+  "display": "Delta wave"
+ },
+ {
+  "clip": "media16",
+  "t": 61.2,
+  "heard": "دلتا",
+  "canon": "delta wave",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "دوتا",
+   "s": 60.8,
+   "src": "peakrn_fa042",
+   "conf": 0.52
+  },
+  "perm_rate": 0.2,
+  "mapped_from": "دلتا",
+  "display": "Delta wave"
+ },
+ {
+  "clip": "media17",
+  "t": 5.97,
+  "heard": "پیر",
+  "canon": "PR",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "زیر",
+   "s": 5.8,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "پیر",
+  "display": "PR"
+ },
+ {
+  "clip": "media18",
+  "t": 7.29,
+  "heard": "تاکی",
+  "canon": "تاکی",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "تاکی",
+   "s": 7.3,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "display": "تاکی"
+ },
+ {
+  "clip": "media18",
+  "t": 8.34,
+  "heard": "میلیون",
+  "canon": "میلیون",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "میگن",
+   "s": 7.9,
+   "src": "speechnorm_fa042",
+   "conf": 0.86
+  },
+  "perm_rate": 0.0,
+  "display": "میلیون"
+ },
+ {
+  "clip": "media18",
+  "t": 9.99,
+  "heard": "جین",
+  "canon": "gain",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "این",
+   "s": 9.8,
+   "src": "peakrn_fa042",
+   "conf": 0.66
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "جین",
+  "display": "Gain"
+ },
+ {
+  "clip": "media18",
+  "t": 17.86,
+  "heard": "کیارس",
+  "canon": "QRS",
+  "model": "fa",
+  "conf": 0.886,
+  "supported": true,
+  "evidence": {
+   "w": "کیارس",
+   "s": 17.9,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "کیارس",
+  "display": "QRS"
+ },
+ {
+  "clip": "media18",
+  "t": 33.5,
+  "heard": "گریم",
+  "canon": "gain",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "بیاریم",
+   "s": 33.5,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "گریم",
+  "display": "Gain"
+ },
+ {
+  "clip": "media19",
+  "t": 31.59,
+  "heard": "زون",
+  "canon": "transition zone",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "اون",
+   "s": 31.7,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "زون",
+  "display": "Transition zone"
+ },
+ {
+  "clip": "media19",
+  "t": 36.21,
+  "heard": "عکسی",
+  "canon": "axis",
+  "model": "fa",
+  "conf": 0.729,
+  "supported": true,
+  "evidence": {
+   "w": "عکسی",
+   "s": 36.2,
+   "src": "speechnorm_fa042",
+   "conf": 0.5
+  },
+  "perm_rate": 0.2,
+  "mapped_from": "عکسی",
+  "display": "Axis"
+ },
+ {
+  "clip": "media19",
+  "t": 36.24,
+  "heard": "axis",
+  "canon": "axis",
+  "model": "en",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "عکسی",
+   "s": 36.2,
+   "src": "speechnorm_fa042",
+   "conf": 0.5
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "axis",
+  "display": "Axis"
+ },
+ {
+  "clip": "media19",
+  "t": 42.36,
+  "heard": "عکسی",
+  "canon": "axis",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "عکسش",
+   "s": 42.4,
+   "src": "speechnorm_fa042",
+   "conf": 0.56
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "عکسی",
+  "display": "Axis"
+ },
+ {
+  "clip": "media19",
+  "t": 42.39,
+  "heard": "axis",
+  "canon": "axis",
+  "model": "en",
+  "conf": 0.958,
+  "supported": true,
+  "evidence": {
+   "w": "عکسش",
+   "s": 42.4,
+   "src": "speechnorm_fa042",
+   "conf": 0.56
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "axis",
+  "display": "Axis"
+ },
+ {
+  "clip": "media19",
+  "t": 48.9,
+  "heard": "اکسیس",
+  "canon": "axis",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "اکسیس",
+   "s": 48.9,
+   "src": "speechnorm_fa042",
+   "conf": 0.57
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "اکسیس",
+  "display": "Axis"
+ },
+ {
+  "clip": "media19",
+  "t": 60.36,
+  "heard": "normal",
+  "canon": "normal",
+  "model": "en",
+  "conf": 0.797,
+  "supported": true,
+  "evidence": {
+   "w": "نرمال",
+   "s": 60.4,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "normal",
+  "display": "Normal"
+ },
+ {
+  "clip": "media19",
+  "t": 60.36,
+  "heard": "نرمال",
+  "canon": "normal",
+  "model": "fa",
+  "conf": 0.897,
+  "supported": true,
+  "evidence": {
+   "w": "نرمال",
+   "s": 60.4,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "نرمال",
+  "display": "Normal"
+ },
+ {
+  "clip": "media19",
+  "t": 62.37,
+  "heard": "گره",
+  "canon": "node",
+  "model": "fa",
+  "conf": 0.851,
+  "supported": true,
+  "evidence": {
+   "w": "داره",
+   "s": 62.4,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "گره",
+  "display": "Node"
+ },
+ {
+  "clip": "media19",
+  "t": 75.69,
+  "heard": "axis",
+  "canon": "axis",
+  "model": "en",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "که",
+   "s": 74.7,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "axis",
+  "display": "Axis"
+ },
+ {
+  "clip": "media19",
+  "t": 81.21,
+  "heard": "ولت",
+  "canon": "ولت",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "ولی",
+   "s": 81.2,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "display": "ولت (V)"
+ },
+ {
+  "clip": "media19",
+  "t": 97.56,
+  "heard": "لیدهای",
+  "canon": "لیدهای",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "لیدهای",
+   "s": 97.6,
+   "src": "speechnorm_fa042",
+   "conf": 0.67
+  },
+  "perm_rate": 0.0,
+  "display": "لیدهای"
+ },
+ {
+  "clip": "media19",
+  "t": 102.53,
+  "heard": "امآی",
+  "canon": "MI",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "ای",
+   "s": 103.0,
+   "src": "afftdn_fa05",
+   "conf": 0.68
+  },
+  "perm_rate": 0.0,
+  "t_end": 102.81,
+  "chain": [
+   "ام",
+   "آی"
+  ],
+  "display": "MI"
+ },
+ {
+  "clip": "media2",
+  "t": 30.42,
+  "heard": "آریتمی",
+  "canon": "arrhythmia",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "آریتمی",
+   "s": 30.4,
+   "src": "dynaudnorm_fa05",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "آریتمی",
+  "display": "Arrhythmia"
+ },
+ {
+  "clip": "media20",
+  "t": 3.6,
+  "heard": "میلی",
+  "canon": "میلی",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "ایلی",
+   "s": 3.9,
+   "src": "dynaudnorm_fa05",
+   "conf": 0.35
+  },
+  "perm_rate": 0.0,
+  "display": "میلی (mV)"
+ },
+ {
+  "clip": "media20",
+  "t": 6.0,
+  "heard": "axis",
+  "canon": "axis",
+  "model": "en",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "که",
+   "s": 9.7,
+   "src": "rover",
+   "conf": 0.53
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "axis",
+  "display": "Axis"
+ },
+ {
+  "clip": "media20",
+  "t": 6.87,
+  "heard": "deviation",
+  "canon": "deviation",
+  "model": "en",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "شن",
+   "s": 7.3,
+   "src": "afftdn_fa05",
+   "conf": 0.75
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "deviation",
+  "display": "Deviation"
+ },
+ {
+  "clip": "media20",
+  "t": 23.88,
+  "heard": "axis",
+  "canon": "axis",
+  "model": "en",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "عکس",
+   "s": 23.9,
+   "src": "speechnorm_fa042",
+   "conf": 0.85
+  },
+  "perm_rate": 0.2,
+  "mapped_from": "axis",
+  "display": "Axis"
+ },
+ {
+  "clip": "media20",
+  "t": 24.81,
+  "heard": "عکسی",
+  "canon": "axis",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "عکس",
+   "s": 23.9,
+   "src": "speechnorm_fa042",
+   "conf": 0.85
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "عکسی",
+  "display": "Axis"
+ },
+ {
+  "clip": "media20",
+  "t": 29.13,
+  "heard": "normal",
+  "canon": "normal",
+  "model": "en",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "نرمال",
+   "s": 29.1,
+   "src": "speechnorm_fa042",
+   "conf": 0.92
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "normal",
+  "display": "Normal"
+ },
+ {
+  "clip": "media20",
+  "t": 29.13,
+  "heard": "نرمال",
+  "canon": "normal",
+  "model": "fa",
+  "conf": 0.83,
+  "supported": true,
+  "evidence": {
+   "w": "نرمال",
+   "s": 29.1,
+   "src": "speechnorm_fa042",
+   "conf": 0.92
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "نرمال",
+  "display": "Normal"
+ },
+ {
+  "clip": "media21",
+  "t": 6.39,
+  "heard": "لیدها",
+  "canon": "لیدها",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "لیدها",
+   "s": 6.4,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "display": "لیدها"
+ },
+ {
+  "clip": "media21",
+  "t": 21.9,
+  "heard": "lateral",
+  "canon": "lateral",
+  "model": "en",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "لترال",
+   "s": 21.9,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "lateral",
+  "display": "Lateral"
+ },
+ {
+  "clip": "media21",
+  "t": 28.59,
+  "heard": "لیدهای",
+  "canon": "لیدهای",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "دیدهای",
+   "s": 28.6,
+   "src": "dynaudnorm_fa05",
+   "conf": 0.8
+  },
+  "perm_rate": 0.0,
+  "display": "لیدهای"
+ },
+ {
+  "clip": "media21",
+  "t": 33.6,
+  "heard": "لیدهای",
+  "canon": "لیدهای",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "دیده‌ای",
+   "s": 33.6,
+   "src": "peakrn_fa042",
+   "conf": 0.57
+  },
+  "perm_rate": 0.0,
+  "display": "لیدهای"
+ },
+ {
+  "clip": "media21",
+  "t": 37.32,
+  "heard": "سپتوم",
+  "canon": "septum",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "سپتال",
+   "s": 37.3,
+   "src": "dynaudnorm_fa05",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "سپتوم",
+  "display": "Septum"
+ },
+ {
+  "clip": "media21",
+  "t": 37.34,
+  "heard": "septum",
+  "canon": "septum",
+  "model": "en",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "سپتال",
+   "s": 37.3,
+   "src": "dynaudnorm_fa05",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "septum",
+  "display": "Septum"
+ },
+ {
+  "clip": "media22",
+  "t": 4.2,
+  "heard": "پیس",
+  "canon": "پیس",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "پی",
+   "s": 4.2,
+   "src": "speechnorm_fa042",
+   "conf": 0.77
+  },
+  "perm_rate": 0.0,
+  "display": "پیس"
+ },
+ {
+  "clip": "media22",
+  "t": 25.95,
+  "heard": "استی",
+  "canon": "ST",
+  "model": "fa",
+  "conf": 0.595,
+  "supported": true,
+  "evidence": {
+   "w": "است",
+   "s": 25.9,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "استی",
+  "display": "ST"
+ },
+ {
+  "clip": "media22",
+  "t": 46.86,
+  "heard": "ام‌آی",
+  "canon": "MI",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "نمای",
+   "s": 46.8,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "ام‌آی",
+  "display": "MI"
+ },
+ {
+  "clip": "media23",
+  "t": 8.73,
+  "heard": "نرمال",
+  "canon": "normal",
+  "model": "fa",
+  "conf": 0.772,
+  "supported": true,
+  "evidence": {
+   "w": "نرمال",
+   "s": 8.7,
+   "src": "speechnorm_fa042",
+   "conf": 0.78
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "نرمال",
+  "display": "Normal"
+ },
+ {
+  "clip": "media23",
+  "t": 15.9,
+  "heard": "لیدهای",
+  "canon": "لیدهای",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "ایده‌ای",
+   "s": 16.0,
+   "src": "speechnorm_fa042",
+   "conf": 0.6
+  },
+  "perm_rate": 0.0,
+  "display": "لیدهای"
+ },
+ {
+  "clip": "media23",
+  "t": 19.62,
+  "heard": "ویو",
+  "canon": "wave",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "وی",
+   "s": 19.7,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "ویو",
+  "display": "Wave"
+ },
+ {
+  "clip": "media23",
+  "t": 27.51,
+  "heard": "سینوسی",
+  "canon": "sinus",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "سینوسی",
+   "s": 27.5,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.4,
+  "mapped_from": "سینوسی",
+  "display": "Sinus"
+ },
+ {
+  "clip": "media23",
+  "t": 28.74,
+  "heard": "پیر",
+  "canon": "PR",
+  "model": "fa",
+  "conf": 0.866,
+  "supported": true,
+  "evidence": {
+   "w": "پیک",
+   "s": 28.7,
+   "src": "speechnorm_fa042",
+   "conf": 0.43
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "پیر",
+  "display": "PR"
+ },
+ {
+  "clip": "media23",
+  "t": 42.81,
+  "heard": "deviation",
+  "canon": "deviation",
+  "model": "en",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "می‌شن",
+   "s": 43.1,
+   "src": "speechnorm_fa042",
+   "conf": 0.84
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "deviation",
+  "display": "Deviation"
+ },
+ {
+  "clip": "media23",
+  "t": 44.34,
+  "heard": "سینوسی",
+  "canon": "sinus",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "سینوسی",
+   "s": 44.3,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "سینوسی",
+  "display": "Sinus"
+ },
+ {
+  "clip": "media24",
+  "t": 16.68,
+  "heard": "پیر",
+  "canon": "PR",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "پیر",
+   "s": 16.7,
+   "src": "speechnorm_fa042",
+   "conf": 0.81
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "پیر",
+  "display": "PR"
+ },
+ {
+  "clip": "media24",
+  "t": 20.61,
+  "heard": "دهلیزی",
+  "canon": "دهلیزی",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "دهلیز",
+   "s": 20.7,
+   "src": "speechnorm_fa042",
+   "conf": 0.78
+  },
+  "perm_rate": 0.2,
+  "display": "دهلیزی"
+ },
+ {
+  "clip": "media24",
+  "t": 25.29,
+  "heard": "نرمال",
+  "canon": "normal",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "نرمال",
+   "s": 25.3,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "نرمال",
+  "display": "Normal"
+ },
+ {
+  "clip": "media24",
+  "t": 39.93,
+  "heard": "دهلیزی",
+  "canon": "دهلیزی",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "دهلیز",
+   "s": 39.9,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "display": "دهلیزی"
+ },
+ {
+  "clip": "media24",
+  "t": 44.46,
+  "heard": "voltage",
+  "canon": "voltage",
+  "model": "en",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "ولتاژ",
+   "s": 44.5,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "voltage",
+  "display": "Voltage"
+ },
+ {
+  "clip": "media24",
+  "t": 44.46,
+  "heard": "ولتاژ",
+  "canon": "voltage",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "ولتاژ",
+   "s": 44.5,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.2,
+  "mapped_from": "ولتاژ",
+  "display": "Voltage"
+ },
+ {
+  "clip": "media24",
+  "t": 55.8,
+  "heard": "میلی",
+  "canon": "میلی",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "می",
+   "s": 55.4,
+   "src": "dynaudnorm_fa05",
+   "conf": 0.84
+  },
+  "perm_rate": 0.0,
+  "display": "میلی (mV)"
+ },
+ {
+  "clip": "media24",
+  "t": 60.3,
+  "heard": "دهلیزی",
+  "canon": "دهلیزی",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "دهلیز",
+   "s": 60.6,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "display": "دهلیزی"
+ },
+ {
+  "clip": "media24",
+  "t": 68.04,
+  "heard": "پیر",
+  "canon": "PR",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "پیر",
+   "s": 68.1,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "پیر",
+  "display": "PR"
+ },
+ {
+  "clip": "media24",
+  "t": 69.84,
+  "heard": "ام‌آی",
+  "canon": "MI",
+  "model": "fa",
+  "conf": 0.704,
+  "supported": true,
+  "evidence": {
+   "w": "نمای",
+   "s": 69.8,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "ام‌آی",
+  "display": "MI"
+ },
+ {
+  "clip": "media24",
+  "t": 74.28,
+  "heard": "لید",
+  "canon": "لید",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "لید",
+   "s": 74.3,
+   "src": "speechnorm_fa042",
+   "conf": 0.32
+  },
+  "perm_rate": 0.0,
+  "display": "لید"
+ },
+ {
+  "clip": "media25",
+  "t": 10.74,
+  "heard": "پیر",
+  "canon": "PR",
+  "model": "fa",
+  "conf": 0.9,
+  "supported": true,
+  "evidence": {
+   "w": "پیر",
+   "s": 10.7,
+   "src": "rover",
+   "conf": 0.73
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "پیر",
+  "display": "PR"
+ },
+ {
+  "clip": "media25",
+  "t": 20.91,
+  "heard": "نود",
+  "canon": "node",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "نوع",
+   "s": 20.8,
+   "src": "dynaudnorm_fa05",
+   "conf": 0.76
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "نود",
+  "display": "Node"
+ },
+ {
+  "clip": "media25",
+  "t": 29.01,
+  "heard": "sinus",
+  "canon": "sinus",
+  "model": "en",
+  "conf": 0.756,
+  "supported": true,
+  "evidence": {
+   "w": "ثانیه",
+   "s": 29.0,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "sinus",
+  "display": "Sinus"
+ },
+ {
+  "clip": "media26",
+  "t": 1.8,
+  "heard": "بلوک",
+  "canon": "block",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "بلوک",
+   "s": 1.9,
+   "src": "peakrn_fa042",
+   "conf": 0.5
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "بلوک",
+  "display": "Block"
+ },
+ {
+  "clip": "media26",
+  "t": 23.61,
+  "heard": "اکسی",
+  "canon": "axis",
+  "model": "fa",
+  "conf": 0.619,
+  "supported": true,
+  "evidence": {
+   "w": "کسی",
+   "s": 23.6,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.2,
+  "mapped_from": "اکسی",
+  "display": "Axis"
+ },
+ {
+  "clip": "media26",
+  "t": 24.63,
+  "heard": "میلی",
+  "canon": "میلی",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "می",
+   "s": 24.5,
+   "src": "dynaudnorm_fa05",
+   "conf": 1.0
+  },
+  "perm_rate": 0.2,
+  "display": "میلی (mV)"
+ },
+ {
+  "clip": "media26",
+  "t": 32.37,
+  "heard": "دلتا",
+  "canon": "delta wave",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "دلتا",
+   "s": 37.8,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "دلتا",
+  "display": "Delta wave"
+ },
+ {
+  "clip": "media26",
+  "t": 32.79,
+  "heard": "ایزو",
+  "canon": "ایزو",
+  "model": "fa",
+  "conf": 0.694,
+  "supported": true,
+  "evidence": {
+   "w": "از",
+   "s": 31.9,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "display": "ایزو (isoelectric)"
+ },
+ {
+  "clip": "media27",
+  "t": 1.17,
+  "heard": "کیارس",
+  "canon": "QRS",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "وارث",
+   "s": 1.4,
+   "src": "speechnorm_fa042",
+   "conf": 0.36
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "کیارس",
+  "display": "QRS"
+ },
+ {
+  "clip": "media27",
+  "t": 30.27,
+  "heard": "پیس",
+  "canon": "پیس",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "هیس",
+   "s": 29.4,
+   "src": "speechnorm_fa042",
+   "conf": 0.41
+  },
+  "perm_rate": 0.0,
+  "display": "پیس"
+ },
+ {
+  "clip": "media28",
+  "t": 7.2,
+  "heard": "کیارس",
+  "canon": "QRS",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "واریس",
+   "s": 8.0,
+   "src": "dynaudnorm_fa05",
+   "conf": 0.51
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "کیارس",
+  "display": "QRS"
+ },
+ {
+  "clip": "media28",
+  "t": 47.4,
+  "heard": "تاکی",
+  "canon": "تاکی",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "تک",
+   "s": 47.7,
+   "src": "rover",
+   "conf": 0.7
+  },
+  "perm_rate": 0.0,
+  "display": "تاکی"
+ },
+ {
+  "clip": "media28",
+  "t": 106.44,
+  "heard": "میلی",
+  "canon": "میلی",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "می",
+   "s": 106.3,
+   "src": "dynaudnorm_fa05",
+   "conf": 0.85
+  },
+  "perm_rate": 0.0,
+  "display": "میلی (mV)"
+ },
+ {
+  "clip": "media29",
+  "t": 8.4,
+  "heard": "عکسی",
+  "canon": "axis",
+  "model": "fa",
+  "conf": 0.639,
+  "supported": true,
+  "evidence": {
+   "w": "عکسی",
+   "s": 8.4,
+   "src": "speechnorm_fa042",
+   "conf": 0.9
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "عکسی",
+  "display": "Axis"
+ },
+ {
+  "clip": "media29",
+  "t": 22.5,
+  "heard": "استی",
+  "canon": "ST",
+  "model": "fa",
+  "conf": 0.598,
+  "supported": true,
+  "evidence": {
+   "w": "است",
+   "s": 22.5,
+   "src": "speechnorm_fa042",
+   "conf": 0.86
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "استی",
+  "display": "ST"
+ },
+ {
+  "clip": "media3",
+  "t": 15.69,
+  "heard": "الکترود",
+  "canon": "electrode",
+  "model": "fa",
+  "conf": 0.596,
+  "supported": true,
+  "evidence": {
+   "w": "الکترود",
+   "s": 15.7,
+   "src": "peakrn_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "الکترود",
+  "display": "Electrode"
+ },
+ {
+  "clip": "media3",
+  "t": 28.08,
+  "heard": "نود",
+  "canon": "node",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "نوت",
+   "s": 29.4,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "نود",
+  "display": "Node"
+ },
+ {
+  "clip": "media3",
+  "t": 33.0,
+  "heard": "نود",
+  "canon": "node",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "نبود",
+   "s": 34.8,
+   "src": "speechnorm_fa042",
+   "conf": 0.31
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "نود",
+  "display": "Node"
+ },
+ {
+  "clip": "media30",
+  "t": 2.79,
+  "heard": "axis",
+  "canon": "axis",
+  "model": "en",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "عکسی",
+   "s": 2.8,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "axis",
+  "display": "Axis"
+ },
+ {
+  "clip": "media30",
+  "t": 11.79,
+  "heard": "axis",
+  "canon": "axis",
+  "model": "en",
+  "conf": 0.906,
+  "supported": true,
+  "evidence": {
+   "w": "اس",
+   "s": 12.7,
+   "src": "speechnorm_fa042",
+   "conf": 0.39
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "axis",
+  "display": "Axis"
+ },
+ {
+  "clip": "media30",
+  "t": 17.67,
+  "heard": "ام‌آی",
+  "canon": "MI",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "اما",
+   "s": 17.7,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "ام‌آی",
+  "display": "MI"
+ },
+ {
+  "clip": "media30",
+  "t": 31.77,
+  "heard": "normal",
+  "canon": "normal",
+  "model": "en",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "نورما",
+   "s": 31.8,
+   "src": "speechnorm_fa042",
+   "conf": 0.34
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "normal",
+  "display": "Normal"
+ },
+ {
+  "clip": "media30",
+  "t": 33.12,
+  "heard": "نرمال",
+  "canon": "normal",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "نورما",
+   "s": 31.8,
+   "src": "speechnorm_fa042",
+   "conf": 0.34
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "نرمال",
+  "display": "Normal"
+ },
+ {
+  "clip": "media30",
+  "t": 41.07,
+  "heard": "گره",
+  "canon": "node",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "میگیره",
+   "s": 41.0,
+   "src": "speechnorm_fa042",
+   "conf": 0.75
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "گره",
+  "display": "Node"
+ },
+ {
+  "clip": "media30",
+  "t": 51.0,
+  "heard": "بطنی",
+  "canon": "بطنی",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "بتی",
+   "s": 52.2,
+   "src": "peakrn_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "display": "بطنی"
+ },
+ {
+  "clip": "media30",
+  "t": 54.06,
+  "heard": "لید",
+  "canon": "لید",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "لید",
+   "s": 54.1,
+   "src": "speechnorm_fa042",
+   "conf": 0.38
+  },
+  "perm_rate": 0.0,
+  "display": "لید"
+ },
+ {
+  "clip": "media30",
+  "t": 63.27,
+  "heard": "axis",
+  "canon": "axis",
+  "model": "en",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "عکس",
+   "s": 63.2,
+   "src": "rover",
+   "conf": 0.35
+  },
+  "perm_rate": 0.2,
+  "mapped_from": "axis",
+  "display": "Axis"
+ },
+ {
+  "clip": "media30",
+  "t": 64.92,
+  "heard": "اکسیس",
+  "canon": "axis",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "الکسیس",
+   "s": 64.8,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "اکسیس",
+  "display": "Axis"
+ },
+ {
+  "clip": "media30",
+  "t": 69.27,
+  "heard": "فاصله",
+  "canon": "فاصله",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "فاصله‌ای",
+   "s": 69.3,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.2,
+  "display": "فاصله (interval)"
+ },
+ {
+  "clip": "media30",
+  "t": 71.7,
+  "heard": "میلی",
+  "canon": "میلی",
+  "model": "fa",
+  "conf": 0.871,
+  "supported": true,
+  "evidence": {
+   "w": "می",
+   "s": 71.7,
+   "src": "dynaudnorm_fa05",
+   "conf": 0.72
+  },
+  "perm_rate": 0.0,
+  "display": "میلی (mV)"
+ },
+ {
+  "clip": "media30",
+  "t": 78.57,
+  "heard": "کیارس",
+  "canon": "QRS",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "کیارس",
+   "s": 78.6,
+   "src": "speechnorm_fa042",
+   "conf": 0.84
+  },
+  "perm_rate": 0.2,
+  "mapped_from": "کیارس",
+  "display": "QRS"
+ },
+ {
+  "clip": "media30",
+  "t": 85.5,
+  "heard": "axis",
+  "canon": "axis",
+  "model": "en",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "که",
+   "s": 84.6,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "axis",
+  "display": "Axis"
+ },
+ {
+  "clip": "media30",
+  "t": 86.91,
+  "heard": "گریم",
+  "canon": "gain",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "داریم",
+   "s": 86.9,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "گریم",
+  "display": "Gain"
+ },
+ {
+  "clip": "media30",
+  "t": 88.09,
+  "heard": "deviation",
+  "canon": "deviation",
+  "model": "en",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "شن",
+   "s": 88.4,
+   "src": "dynaudnorm_fa05",
+   "conf": 1.0
+  },
+  "perm_rate": 0.2,
+  "mapped_from": "deviation",
+  "display": "Deviation"
+ },
+ {
+  "clip": "media30",
+  "t": 88.86,
+  "heard": "axis",
+  "canon": "axis",
+  "model": "en",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "که",
+   "s": 89.4,
+   "src": "speechnorm_fa042",
+   "conf": 0.65
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "axis",
+  "display": "Axis"
+ },
+ {
+  "clip": "media30",
+  "t": 98.96,
+  "heard": "عکسی",
+  "canon": "axis",
+  "model": "fa",
+  "conf": 0.687,
+  "supported": true,
+  "evidence": {
+   "w": "کسی",
+   "s": 99.1,
+   "src": "speechnorm_fa042",
+   "conf": 0.69
+  },
+  "perm_rate": 0.2,
+  "mapped_from": "عکسی",
+  "display": "Axis"
+ },
+ {
+  "clip": "media30",
+  "t": 99.45,
+  "heard": "اکسیس",
+  "canon": "axis",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "مکسس",
+   "s": 99.3,
+   "src": "afftdn_fa05",
+   "conf": 0.91
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "اکسیس",
+  "display": "Axis"
+ },
+ {
+  "clip": "media30",
+  "t": 100.53,
+  "heard": "زون",
+  "canon": "transition zone",
+  "model": "fa",
+  "conf": 0.808,
+  "supported": true,
+  "evidence": {
+   "w": "زمان",
+   "s": 100.6,
+   "src": "peakrn_fa042",
+   "conf": 0.54
+  },
+  "perm_rate": 0.2,
+  "mapped_from": "زون",
+  "display": "Transition zone"
+ },
+ {
+  "clip": "media30",
+  "t": 104.97,
+  "heard": "ویو",
+  "canon": "wave",
+  "model": "fa",
+  "conf": 0.858,
+  "supported": true,
+  "evidence": {
+   "w": "ویو",
+   "s": 105.0,
+   "src": "afftdn_fa05",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "ویو",
+  "display": "Wave"
+ },
+ {
+  "clip": "media30",
+  "t": 108.57,
+  "heard": "وات",
+  "canon": "وات",
+  "model": "fa",
+  "conf": 0.76,
+  "supported": true,
+  "evidence": {
+   "w": "واقع",
+   "s": 108.2,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "display": "وات (W)"
+ },
+ {
+  "clip": "media30",
+  "t": 113.52,
+  "heard": "برانچ",
+  "canon": "bundle branch block",
+  "model": "fa",
+  "conf": 0.864,
+  "supported": true,
+  "evidence": {
+   "w": "برآیند",
+   "s": 113.5,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.2,
+  "mapped_from": "برانچ",
+  "display": "Bundle branch block"
+ },
+ {
+  "clip": "media30",
+  "t": 114.93,
+  "heard": "کیارس",
+  "canon": "QRS",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "کیارس",
+   "s": 115.0,
+   "src": "speechnorm_fa042",
+   "conf": 0.71
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "کیارس",
+  "display": "QRS"
+ },
+ {
+  "clip": "media31",
+  "t": 29.85,
+  "heard": "گریم",
+  "canon": "gain",
+  "model": "fa",
+  "conf": 0.732,
+  "supported": true,
+  "evidence": {
+   "w": "داریم",
+   "s": 29.8,
+   "src": "dynaudnorm_fa05",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "گریم",
+  "display": "Gain"
+ },
+ {
+  "clip": "media31",
+  "t": 50.49,
+  "heard": "axis",
+  "canon": "axis",
+  "model": "en",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "عکسی",
+   "s": 50.5,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "axis",
+  "display": "Axis"
+ },
+ {
+  "clip": "media31",
+  "t": 53.1,
+  "heard": "کیارس",
+  "canon": "QRS",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "آرس",
+   "s": 52.5,
+   "src": "dynaudnorm_fa05",
+   "conf": 0.41
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "کیارس",
+  "display": "QRS"
+ },
+ {
+  "clip": "media31",
+  "t": 66.63,
+  "heard": "گریم",
+  "canon": "gain",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "داریم",
+   "s": 66.6,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "گریم",
+  "display": "Gain"
+ },
+ {
+  "clip": "media31",
+  "t": 78.15,
+  "heard": "وات",
+  "canon": "وات",
+  "model": "fa",
+  "conf": 0.652,
+  "supported": true,
+  "evidence": {
+   "w": "ساعت",
+   "s": 78.1,
+   "src": "speechnorm_fa042",
+   "conf": 0.47
+  },
+  "perm_rate": 0.0,
+  "display": "وات (W)"
+ },
+ {
+  "clip": "media31",
+  "t": 79.47,
+  "heard": "کیآراس",
+  "canon": "QRS",
+  "model": "fa",
+  "conf": 0.876,
+  "supported": true,
+  "evidence": {
+   "w": "که",
+   "s": 79.5,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "t_end": 80.43,
+  "chain": [
+   "کی",
+   "آر",
+   "اس"
+  ],
+  "display": "QRS"
+ },
+ {
+  "clip": "media31",
+  "t": 108.78,
+  "heard": "ام‌آی",
+  "canon": "MI",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "اما‌های",
+   "s": 107.2,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "ام‌آی",
+  "display": "MI"
+ },
+ {
+  "clip": "media31",
+  "t": 117.27,
+  "heard": "لیدهای",
+  "canon": "لیدهای",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "لیدهای",
+   "s": 117.3,
+   "src": "speechnorm_fa042",
+   "conf": 0.5
+  },
+  "perm_rate": 0.0,
+  "display": "لیدهای"
+ },
+ {
+  "clip": "media4",
+  "t": 6.18,
+  "heard": "standard",
+  "canon": "standard",
+  "model": "en",
+  "conf": 0.779,
+  "supported": true,
+  "evidence": {
+   "w": "استاندارد",
+   "s": 6.1,
+   "src": "speechnorm_fa042",
+   "conf": 0.88
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "standard",
+  "display": "Standard"
+ },
+ {
+  "clip": "media4",
+  "t": 9.12,
+  "heard": "لید",
+  "canon": "لید",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "لید",
+   "s": 8.1,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "display": "لید"
+ },
+ {
+  "clip": "media4",
+  "t": 11.13,
+  "heard": "لیدهای",
+  "canon": "لیدهای",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "ایده‌ای",
+   "s": 11.1,
+   "src": "speechnorm_fa042",
+   "conf": 0.52
+  },
+  "perm_rate": 0.0,
+  "display": "لیدهای"
+ },
+ {
+  "clip": "media4",
+  "t": 19.98,
+  "heard": "لیدهای",
+  "canon": "لیدهای",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "دیده‌ای",
+   "s": 20.0,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "display": "لیدهای"
+ },
+ {
+  "clip": "media5",
+  "t": 3.33,
+  "heard": "اندامی",
+  "canon": "اندامی",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "اندامی",
+   "s": 3.3,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "display": "اندامی (limb)"
+ },
+ {
+  "clip": "media5",
+  "t": 6.48,
+  "heard": "electrode",
+  "canon": "electrode",
+  "model": "en",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "الکترود",
+   "s": 6.5,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "electrode",
+  "display": "Electrode"
+ },
+ {
+  "clip": "media5",
+  "t": 7.59,
+  "heard": "الکترود",
+  "canon": "electrode",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "الکترود",
+   "s": 6.5,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "الکترود",
+  "display": "Electrode"
+ },
+ {
+  "clip": "media5",
+  "t": 11.7,
+  "heard": "تحتانی",
+  "canon": "inferior",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "تحتانی",
+   "s": 11.8,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "تحتانی",
+  "display": "Inferior"
+ },
+ {
+  "clip": "media5",
+  "t": 31.92,
+  "heard": "اندامی",
+  "canon": "اندامی",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "اندام‌های",
+   "s": 31.9,
+   "src": "dynaudnorm_fa05",
+   "conf": 0.69
+  },
+  "perm_rate": 0.0,
+  "display": "اندامی (limb)"
+ },
+ {
+  "clip": "media5",
+  "t": 37.62,
+  "heard": "اندامی",
+  "canon": "اندامی",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "اندام",
+   "s": 37.6,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "display": "اندامی (limb)"
+ },
+ {
+  "clip": "media5",
+  "t": 48.96,
+  "heard": "الکترود",
+  "canon": "electrode",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "الکترودی",
+   "s": 49.0,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.2,
+  "mapped_from": "الکترود",
+  "display": "Electrode"
+ },
+ {
+  "clip": "media5",
+  "t": 48.96,
+  "heard": "الکترودی",
+  "canon": "electrode",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "الکترودی",
+   "s": 49.0,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "الکترودی",
+  "display": "Electrode"
+ },
+ {
+  "clip": "media5",
+  "t": 48.99,
+  "heard": "electrode",
+  "canon": "electrode",
+  "model": "en",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "الکترودی",
+   "s": 49.0,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "electrode",
+  "display": "Electrode"
+ },
+ {
+  "clip": "media5",
+  "t": 51.84,
+  "heard": "الکترود",
+  "canon": "electrode",
+  "model": "fa",
+  "conf": 0.931,
+  "supported": true,
+  "evidence": {
+   "w": "الکترود",
+   "s": 51.8,
+   "src": "speechnorm_fa042",
+   "conf": 0.82
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "الکترود",
+  "display": "Electrode"
+ },
+ {
+  "clip": "media5",
+  "t": 55.2,
+  "heard": "الکترود",
+  "canon": "electrode",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "الکترود",
+   "s": 55.2,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "الکترود",
+  "display": "Electrode"
+ },
+ {
+  "clip": "media5",
+  "t": 62.37,
+  "heard": "electrode",
+  "canon": "electrode",
+  "model": "en",
+  "conf": 0.726,
+  "supported": true,
+  "evidence": {
+   "w": "الکترود",
+   "s": 62.4,
+   "src": "speechnorm_fa042",
+   "conf": 0.9
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "electrode",
+  "display": "Electrode"
+ },
+ {
+  "clip": "media5",
+  "t": 62.39,
+  "heard": "الکترود",
+  "canon": "electrode",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "الکترود",
+   "s": 62.4,
+   "src": "speechnorm_fa042",
+   "conf": 0.9
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "الکترود",
+  "display": "Electrode"
+ },
+ {
+  "clip": "media6",
+  "t": 3.95,
+  "heard": "الکترود",
+  "canon": "electrode",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "الکترود",
+   "s": 4.0,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "الکترود",
+  "display": "Electrode"
+ },
+ {
+  "clip": "media6",
+  "t": 14.4,
+  "heard": "electrode",
+  "canon": "electrode",
+  "model": "en",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "الکترود",
+   "s": 15.1,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "electrode",
+  "display": "Electrode"
+ },
+ {
+  "clip": "media6",
+  "t": 29.55,
+  "heard": "لید",
+  "canon": "لید",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "لید",
+   "s": 29.5,
+   "src": "speechnorm_fa042",
+   "conf": 0.85
+  },
+  "perm_rate": 0.0,
+  "display": "لید"
+ },
+ {
+  "clip": "media7",
+  "t": 2.34,
+  "heard": "لیدهای",
+  "canon": "لیدهای",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "ایده‌ای",
+   "s": 2.4,
+   "src": "speechnorm_fa042",
+   "conf": 0.64
+  },
+  "perm_rate": 0.0,
+  "display": "لیدهای"
+ },
+ {
+  "clip": "media7",
+  "t": 8.1,
+  "heard": "میلی",
+  "canon": "میلی",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "جلوی",
+   "s": 6.8,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.2,
+  "display": "میلی (mV)"
+ },
+ {
+  "clip": "media7",
+  "t": 19.11,
+  "heard": "گره",
+  "canon": "node",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "میگیره",
+   "s": 19.0,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.2,
+  "mapped_from": "گره",
+  "display": "Node"
+ },
+ {
+  "clip": "media7",
+  "t": 30.01,
+  "heard": "الکترود",
+  "canon": "electrode",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "الکترود",
+   "s": 30.1,
+   "src": "speechnorm_fa042",
+   "conf": 0.56
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "الکترود",
+  "display": "Electrode"
+ },
+ {
+  "clip": "media7",
+  "t": 30.06,
+  "heard": "electrode",
+  "canon": "electrode",
+  "model": "en",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "الکترود",
+   "s": 30.1,
+   "src": "speechnorm_fa042",
+   "conf": 0.56
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "electrode",
+  "display": "Electrode"
+ },
+ {
+  "clip": "media8",
+  "t": 5.88,
+  "heard": "ایسکمی",
+  "canon": "ischemia",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "ایسکمی",
+   "s": 5.8,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.2,
+  "mapped_from": "ایسکمی",
+  "display": "Ischemia"
+ },
+ {
+  "clip": "media8",
+  "t": 5.96,
+  "heard": "ischemia",
+  "canon": "ischemia",
+  "model": "en",
+  "conf": 0.969,
+  "supported": true,
+  "evidence": {
+   "w": "ایسکمی",
+   "s": 5.8,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "ischemia",
+  "display": "Ischemia"
+ },
+ {
+  "clip": "media8",
+  "t": 6.6,
+  "heard": "ام‌آی",
+  "canon": "MI",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "اعمال",
+   "s": 6.6,
+   "src": "speechnorm_fa042",
+   "conf": 0.82
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "ام‌آی",
+  "display": "MI"
+ },
+ {
+  "clip": "media8",
+  "t": 12.9,
+  "heard": "آی",
+  "canon": "آی",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "آر‌ای",
+   "s": 12.2,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.4,
+  "display": "آی"
+ },
+ {
+  "clip": "media8",
+  "t": 14.99,
+  "heard": "ام‌آی",
+  "canon": "MI",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "گرامی",
+   "s": 14.8,
+   "src": "dynaudnorm_fa05",
+   "conf": 0.85
+  },
+  "perm_rate": 0.2,
+  "mapped_from": "ام‌آی",
+  "display": "MI"
+ },
+ {
+  "clip": "media8",
+  "t": 16.47,
+  "heard": "جین",
+  "canon": "gain",
+  "model": "fa",
+  "conf": 0.731,
+  "supported": true,
+  "evidence": {
+   "w": "این",
+   "s": 17.2,
+   "src": "speechnorm_fa042",
+   "conf": 0.75
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "جین",
+  "display": "Gain"
+ },
+ {
+  "clip": "media8",
+  "t": 27.57,
+  "heard": "رایت",
+  "canon": "رایت",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "رایت",
+   "s": 27.6,
+   "src": "peakrn_fa042",
+   "conf": 0.7
+  },
+  "perm_rate": 0.2,
+  "display": "رایت"
+ },
+ {
+  "clip": "media8",
+  "t": 46.14,
+  "heard": "میلیون",
+  "canon": "میلیون",
+  "model": "fa",
+  "conf": 0.831,
+  "supported": true,
+  "evidence": {
+   "w": "میشن",
+   "s": 46.1,
+   "src": "speechnorm_fa042",
+   "conf": 0.93
+  },
+  "perm_rate": 0.0,
+  "display": "میلیون"
+ },
+ {
+  "clip": "media8",
+  "t": 51.93,
+  "heard": "گریم",
+  "canon": "gain",
+  "model": "fa",
+  "conf": 0.875,
+  "supported": true,
+  "evidence": {
+   "w": "داریم",
+   "s": 51.9,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "گریم",
+  "display": "Gain"
+ },
+ {
+  "clip": "media9",
+  "t": 13.56,
+  "heard": "لیدهای",
+  "canon": "لیدهای",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "لیدهای",
+   "s": 13.6,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "display": "لیدهای"
+ },
+ {
+  "clip": "media9",
+  "t": 14.04,
+  "heard": "اندامی",
+  "canon": "اندامی",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "اندامی",
+   "s": 14.0,
+   "src": "speechnorm_fa042",
+   "conf": 1.0
+  },
+  "perm_rate": 0.0,
+  "display": "اندامی (limb)"
+ },
+ {
+  "clip": "media9",
+  "t": 18.12,
+  "heard": "پرخوری",
+  "canon": "precordial",
+  "model": "fa",
+  "conf": 1.0,
+  "supported": true,
+  "evidence": {
+   "w": "پرخوری",
+   "s": 18.1,
+   "src": "speechnorm_fa042",
+   "conf": 0.66
+  },
+  "perm_rate": 0.0,
+  "mapped_from": "پرخوری",
+  "display": "Precordial"
+ }
+]

@@ -53,9 +53,10 @@ def clean(text: str) -> str:
 
 
 class JozePDF(FPDF):
-    def __init__(self, title: str, subtitle: str = ''):
+    def __init__(self, title: str, subtitle: str = '', img_root: Path | None = None):
         super().__init__(orientation='P', unit='mm', format='A4')
         self.doc_title, self.doc_sub = title, subtitle
+        self.img_root = img_root or Path.cwd()
         self.set_margins(16, 16, 16)
         self.set_auto_page_break(True, margin=18)
         self.add_font('Vazir', '', str(FONT_DIR / 'Vazirmatn-Regular.ttf'))
@@ -193,6 +194,37 @@ class JozePDF(FPDF):
                     row.cell(c)
         self.ln(2.5)
 
+    def image_block(self, rel: str, caption: str = ''):
+        """تصویر اسلاید: متناسب با عرض صفحه، با کپشن فارسی"""
+        from PIL import Image as PILImage
+        path = (self.img_root / rel) if not Path(rel).is_absolute() else Path(rel)
+        if not path.exists():
+            self.para(f'[تصویر یافت نشد: {rel}]', size=9, color=MUTED)
+            return
+        avail = self.w - self.l_margin - self.r_margin
+        with PILImage.open(path) as im:
+            nw, nh = im.size
+        w, h = avail, avail * nh / nw
+        if h > 148:                       # بلندتر از حد مجاز → با ارتفاع محدود کن
+            h = 148
+            w = h * nw / nh
+        need = h + (7 if caption else 2) + 5
+        if self.get_y() + need > self.h - self.b_margin:
+            self.add_page()
+        x = self.l_margin + (avail - w) / 2
+        y = self.get_y()
+        self.set_draw_color(*LINE)
+        self.set_line_width(0.25)
+        self.rect(x - 0.6, y - 0.6, w + 1.2, h + 1.2)
+        self.image(str(path), x=x, y=y, w=w, h=h)
+        self.set_y(y + h + 1.8)
+        if caption:
+            self.set_font('Vazir', '', 8.8)
+            self.set_text_color(*MUTED)
+            self.set_x(self.l_margin)
+            self.multi_cell(avail, 5.4, clean(caption), align='C', new_x='LMARGIN', new_y='NEXT')
+        self.ln(3)
+
     def hr(self):
         self.ln(1)
         self.set_draw_color(*LINE)
@@ -210,9 +242,10 @@ class JozePDF(FPDF):
         self.ln(0.6)
 
 
-def render(md_path: Path, out_path: Path, title: str, subtitle: str = '') -> None:
+def render(md_path: Path, out_path: Path, title: str, subtitle: str = '',
+           img_root: Path | None = None) -> None:
     lines = md_path.read_text(encoding='utf-8').split('\n')
-    pdf = JozePDF(title, subtitle)
+    pdf = JozePDF(title, subtitle, img_root=img_root or md_path.parent)
     pdf.add_page()
 
     # ---------------- جلد
@@ -286,6 +319,13 @@ def render(md_path: Path, out_path: Path, title: str, subtitle: str = '') -> Non
             table_buf = []
             i = j
             continue
+        # ------------------------------------------------ تصویر
+        m_img = re.match(r'^!\[(.*?)\]\((.*?)\)\s*$', line)
+        if m_img:
+            flush_quote()
+            pdf.image_block(m_img.group(2), m_img.group(1))
+            i += 1
+            continue
         # ------------------------------------------------ عناوین
         if line.startswith('# '):
             flush_quote()
@@ -345,8 +385,10 @@ def main():
     ap.add_argument('--out', required=True)
     ap.add_argument('--title', default='جزوه')
     ap.add_argument('--subtitle', default='')
+    ap.add_argument('--img-root', default=None, help='ریشهٔ مسیر تصاویر (پیش‌فرض: پوشهٔ فایل md)')
     a = ap.parse_args()
-    render(Path(a.md), Path(a.out), a.title, a.subtitle)
+    render(Path(a.md), Path(a.out), a.title, a.subtitle,
+           img_root=Path(a.img_root) if a.img_root else None)
 
 
 if __name__ == '__main__':

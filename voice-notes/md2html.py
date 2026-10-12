@@ -25,6 +25,10 @@ CSS = """
   h4 { font-size:1rem; margin-top:20px; }
   p { margin:10px 0; }
   a { color:var(--accent); }
+  figure { margin:20px auto; text-align:center; }
+  figure img { max-width:100%; height:auto; border:1px solid var(--line); border-radius:8px;
+               box-shadow:0 2px 10px rgba(0,0,0,.07); background:#fff; }
+  figcaption { font-size:.85rem; color:var(--muted); margin-top:8px; line-height:1.8; }
   table { border-collapse:collapse; width:100%; margin:14px 0; background:var(--card);
           box-shadow:0 1px 2px rgba(0,0,0,.04); font-size:.95rem; }
   th,td { border:1px solid var(--line); padding:8px 12px; text-align:right; vertical-align:top; }
@@ -79,6 +83,15 @@ def convert(md: str) -> str:
                 body.append(lines[i]); i += 1
             i += 1
             out.append("<pre><code>" + html.escape("\n".join(body)) + "</code></pre>")
+            continue
+
+        # image  ![caption](path)
+        m_img = re.match(r"^!\[(.*?)\]\((.*?)\)\s*$", s)
+        if m_img:
+            cap, src = m_img.group(1), m_img.group(2)
+            cap_html = f"<figcaption>{inline(cap)}</figcaption>" if cap else ""
+            out.append(f'<figure><img src="{html.escape(src)}" alt="{html.escape(cap)}" loading="lazy">{cap_html}</figure>')
+            i += 1
             continue
 
         # heading

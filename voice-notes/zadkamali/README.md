@@ -6,7 +6,7 @@
 
 | فایل | توضیح |
 |---|---|
-| **`joze-kamel.html`** | 🏆 **جزوهٔ کامل ECG** — روایت استاد **قطعه‌به‌قطعه** (هر ۳۱ فایل)، بدون جاافتادگی + متن دقیق اسلایدها + پیوست‌ها |
+| **`joze-kamel.html`** | 🏆 **جزوهٔ کامل ECG (مصوّر)** — روایت استاد **قطعه‌به‌قطعه** (هر ۳۱ فایل)، **۳۴ تصویر اسلایدها**، متن دقیق اسلایدها + پیوست‌ها |
 | **`joze-voice.html`** | 🎙 **جزوهٔ روایت‌محور (موضوعی)** — ۲۲ بخش، ساختار و لحن از خودِ حرف‌های استاد |
 | `joze-voice.md` | همان جزوه به‌صورت مارک‌داون |
 | **`joze.html`** | 📘 **جزوهٔ موضوعی** — ۱۷ بخش دسته‌بندی‌شده بر پایهٔ اسلایدها |
@@ -20,12 +20,15 @@
 
 | فایل | صفحه | توضیح |
 |---|---|---|
-| **`joze-kamel.pdf`** | ۲۳ | 🏆 جزوهٔ کامل — راست‌به‌چپ، با بوکمارک و فهرست راهنمای PDF |
+| **`joze-kamel.pdf`** | **۴۴** | 🏆 جزوهٔ کامل **مصوّر** — با ۳۴ تصویر اسلاید، راست‌به‌چپ، بوکمارک‌دار |
 | `joze-voice.pdf` | ۱۵ | جزوهٔ موضوعی روایت‌محور |
 | `asr-accuracy.pdf` | ۵ | گزارش دقت شنیدن صدا |
 
-> بازتولید: `python3 voice-notes/md2pdf.py voice-notes/zadkamali/joze-kamel.md \
->   --out joze-kamel.pdf --title "جزوهٔ کامل ECG" --subtitle "…"`
+| `slide_imgs/` | ۳۴ تصویر اسلایدها (استخراج‌شده از pptx، بهینه‌شده) + نقشهٔ استفاده |
+
+> بازتولید PDF: `python3 voice-notes/md2pdf.py voice-notes/zadkamali/joze-kamel.md \
+>   --out joze-kamel.pdf --title "جزوهٔ کامل ECG" --subtitle "…" --img-root voice-notes/zadkamali`
+> بازتولید تصاویر: `python3 voice-notes/extract_slide_imgs.py "دکتر زادکمالی.pptx" --out work/zadkamali/slide_imgs`
 | `accuracy.json` | دادهٔ خام معیارهای دقت (اسلاید‌به‌اسلاید) |
 | `slides-en.html` / `slides-en.md` | متن دقیق ۶۶ اسلاید (انگلیسی) |
 | `transcript-fa.json` | دادهٔ ساخت‌یافته روایت (قطعه‌ها + زمان هر جمله) |

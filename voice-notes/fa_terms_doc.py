@@ -19,8 +19,8 @@ START, END = '<!--TERMS-DOC-START-->', '<!--TERMS-DOC-END-->'
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument('--validate', required=True, help='termspot_validate.py --out …json')
-    ap.add_argument('--audit-md', default='')
-    ap.add_argument('--validate-md', default='')
+    ap.add_argument('--audit-md', default='', nargs='+')
+    ap.add_argument('--validate-md', default='', nargs='+')
     ap.add_argument('--out', required=True)
     ap.add_argument('--inject-md', default='')
     ap.add_argument('--n-scan-windows', type=int, default=0)
@@ -49,7 +49,8 @@ def main() -> None:
           'به‌جای اینکه آزاد باشد هر جمله‌ای بسازد، واژگانش به **اصطلاح‌های ECG** محدود می‌شود؛',
           'آن‌وقت یا اصطلاح را می‌شنود یا صریح می‌گوید «نمی‌دانم» (نشانهٔ unk). بعد نتیجه با',
           '**متن آزادِ ۱۰کاناله** همان لحظه مقابله می‌شود. هر سطر زیر یعنی «در این ثانیه، این',
-          'اصطلاح با شاهدِ مستقل شنیده شده». ملاکِ پذیرش، آزمون جایگشتی است (پایین را ببینید).', '',
+          'اصطلاح با شاهدِ مستقل شنیده شده». دو پاس اجرا شد — **پاسِ اصلی** و **پاسِ صدای دنیویز**',
+          '(کانالِ گیتینگِ طیفی) — و نتایج یکتا شد؛ ملاکِ پذیرش، آزمون جایگشتی است (پایین را ببینید).', '',
           f'- اصطلاح‌های تأییدشده: **{len(ok)}** مورد · متمایز: **{len(gl)}** اصطلاح · '
           f'در **{len(per_clip)}** قطعه', '',
           '### واژه‌نامهٔ اصطلاح‌های شنیده‌شده', '',
@@ -71,10 +72,16 @@ def main() -> None:
 
     # ----------------------------------------------------------- سنجش‌ها
     md += ['', '### سنجشِ صداقتِ روش (سه آزمون)', '']
-    for p, title in ((a.validate_md, 'آزمون جایگشتی — آیا تشخیص «ویژه» است؟'),
-                     (a.audit_md, 'آزمون گرامرِ کنترل — آیا دیکود اجباری «توهم» می‌زند؟')):
+    for p in (a.validate_md or []):
         if p and Path(p).exists():
             body = Path(p).read_text(encoding='utf-8')
+            title = re.sub(r'^#\s*', '', body.splitlines()[0]) if body else 'آزمون'
+            body = re.sub(r'^# .*$', '', body, count=1, flags=re.M).strip()
+            md += [f'#### {title}', '', body, '']
+    for p in (a.audit_md or []):
+        if p and Path(p).exists():
+            body = Path(p).read_text(encoding='utf-8')
+            title = re.sub(r'^#\s*', '', body.splitlines()[0]) if body else 'آزمون'
             body = re.sub(r'^# .*$', '', body, count=1, flags=re.M).strip()
             md += [f'#### {title}', '', body, '']
     md += ['> **جمع‌بندی صادقانه:** خودِ رمزگشایی اجباری شاهد نیست؛ با گرامرِ کنترل هم به همان',

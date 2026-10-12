@@ -196,6 +196,10 @@ def main() -> None:
         return
 
     md = Path(a.md).read_text(encoding='utf-8')
+    fixed = len(re.findall(r'(?<!\n)> 🔉 \*\*متن خام صدا —', md))
+    if fixed:
+        md = re.sub(r'(?<!\n)(> 🔉 \*\*متن خام صدا —)', r'\n\1', md)
+        print(f'🔧 {fixed} سرآمدِ چسبیده به خط قبل جدا شد')
     report = [(m.group('name'), *marked_clip(raw, m.group('name'), spots.get(m.group('name'), []), sugg))
               for m in HDR.finditer(md)]
     have = {n for n, _, _ in report}
@@ -205,8 +209,12 @@ def main() -> None:
         blk = block_for(name, stats, text, spots.get(name, []))
         pat = re.compile(rf'(?m)^> 🔉 \*\*متن خام صدا — `{name}`\*\*.*?'
                          rf'(?=^(?!>)|^> 🔉 \*\*متن خام صدا — )', re.S)
+
+        def _sub(m, b=blk):
+            # اگر تطبیق شاملِ \n پایانی بود، همان را برگردان تا سرآمدِ بلوکِ بعدی نچسبد
+            return b + ('\n' if m.group(0).endswith('\n') else '')
         if pat.search(out):
-            out = pat.sub(lambda _m, b=blk: b, out, count=1)
+            out = pat.sub(_sub, out, count=1)
         else:
             out = re.sub(rf'^<!--RAW:{name}-->$', lambda _m, b=blk: b, out, count=1, flags=re.M)
         total_n += stats.get('n', 0)

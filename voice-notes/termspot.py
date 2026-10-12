@@ -61,9 +61,10 @@ def term_lists() -> tuple[list[str], list[str]]:
     return fa, en
 
 
-def to_wav(audio: Path, clip: str, out: Path) -> Path:
+def to_wav(audio: Path, clip: str, out: Path, chain: str = CHAIN) -> Path:
     subprocess.run([FFMPEG, '-y', '-v', 'error', '-i', str(audio / f'{clip}.m4a'),
-                    '-ar', '16000', '-ac', '1', '-af', CHAIN, '-f', 'wav', str(out)], check=True)
+                    '-ar', '16000', '-ac', '1', '-af', chain or 'anull', '-f', 'wav', str(out)],
+                   check=True)
     return out
 
 
@@ -74,11 +75,11 @@ def _decode(rec, data: bytes):
 
 
 def worker(args):
-    clip, fa_gram, en_gram, win, hop, min_conf, tmp = args
+    clip, fa_gram, en_gram, win, hop, min_conf, tmp, audio, chain = args
     from vosk import Model, KaldiRecognizer, SetLogLevel
     SetLogLevel(-1)
     tmp = Path(tmp)
-    raw = to_wav(Path('/home/user/work/zadkamali/audio'), clip, tmp / f'{clip}_16k.wav')
+    raw = to_wav(Path(audio), clip, tmp / f'{clip}_16k.wav', chain)
     x, sr = sf.read(str(raw), dtype='int16')
     fa_m = Model(FA_MODEL)
     en_m = Model(EN_MODEL)
@@ -139,6 +140,11 @@ def merge_occurrences(occ: list[dict], gap: float = 1.5) -> list[dict]:
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument('--clips', default='', help='فهرست با کاما؛ پیش‌فرض همه')
+    ap.add_argument('--audio', default='/home/user/work/zadkamali/audio',
+                    help='پوشهٔ صدا (پیش‌فرض: صدای اصلی؛ می‌توان پوشهٔ دنیویزشده داد)')
+    ap.add_argument('--chain', default=CHAIN, help='زنجیرهٔ ffmpeg پیش از رمزگشایی')
+    ap.add_argument('--grammar-json', default='',
+                    help='گرامرِ مخصوصِ هر قطعه: {"mediaN": {"fa": [...], "en": [...]}}')
     ap.add_argument('--out-json', required=True)
     ap.add_argument('--out-md', required=True)
     ap.add_argument('--win', type=float, default=1.8)
@@ -155,7 +161,15 @@ def main() -> None:
     clips = ([c.strip() for c in a.clips.split(',') if c.strip()] or
              [f'media{i}' for i in range(1, 32)])
     Path(a.tmp).mkdir(parents=True, exist_ok=True)
-    args = [(c, fa_gram, en_gram, a.win, a.hop, a.min_conf, a.tmp) for c in clips]
+    perclip = {}
+    if a.grammar_json and Path(a.grammar_json).exists():
+        perclip = json.loads(Path(a.grammar_json).read_text(encoding='utf-8'))
+    args = []
+    for c in clips:
+        g = perclip.get(c) or {}
+        fg = (g.get('fa') or fa_gram) + ['[unk]']
+        eg = (g.get('en') or en_gram) + ['[unk]']
+        args.append((c, fg, eg, a.win, a.hop, a.min_conf, a.tmp, a.audio, a.chain))
     print(f'اسکن {len(clips)} قطعه · پنجره {a.win}s گام {a.hop}s · '
           f'{len(fa_gram)-1} اصطلاح فارسی، {len(en_gram)-1} انگلیسی', flush=True)
 

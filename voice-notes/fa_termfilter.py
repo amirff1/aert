@@ -63,14 +63,21 @@ def is_rare(word: str) -> bool:
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument('--in', dest='inp', required=True)
+    ap.add_argument('--in', dest='inp', required=True, nargs='+',
+                    help='یک یا چند فایلِ خروجیِ termspot_validate (چند پاسه)')
     ap.add_argument('--out', required=True)
     ap.add_argument('--report', default='')
     a = ap.parse_args()
 
-    rows = json.loads(Path(a.inp).read_text(encoding='utf-8'))
-    rows = [r for r in rows if r.get('supported')]
+    rows = []
+    for i, f in enumerate(a.inp):
+        part = json.loads(Path(f).read_text(encoding='utf-8'))
+        tag = Path(f).stem.replace('termspot_validate', 'pass') or f'pass{i}'
+        for r in part:
+            if r.get('supported'):
+                rows.append({**r, 'source': tag})
     rows.sort(key=lambda r: (r['clip'], r['t']))
+    n_raw = len(rows)
 
     # ۰) هر «شنیدهٔ خام» را با فرهنگ دامنه به اصطلاحِ استاندارد نگاشت می‌کنیم
     sugg = Suggestor([r['heard'] for r in rows])
@@ -137,6 +144,22 @@ def main() -> None:
             dropped.append({**r, 'weak_evidence': evw})
     kept = strong_kept
 
+    # ۲٫۷) حذفِ تکراری‌های هم‌معنا در پنجرهٔ نزدیک (پاسِ دنیویز در اولویت)
+    kept.sort(key=lambda r: (r['clip'], r['canon'], r['t'], 0 if r.get('source') == 'pass_nr' else 1))
+    dedup, seen = [], []
+    for r in kept:
+        dup = False
+        for q in reversed(seen[-40:]):
+            if (q['clip'] == r['clip'] and q['canon'] == r['canon']
+                    and abs(q['t'] - r['t']) <= 1.6):
+                dup = True
+                break
+        if not dup:
+            dedup.append(r)
+            seen.append(r)
+    n_dedup = len(kept) - len(dedup)
+    kept = dedup
+
     # ۳) یکسان‌سازی نمایش
     for r in kept:
         c = r['canon'].lower()
@@ -153,7 +176,7 @@ def main() -> None:
     per = {}
     for r in kept:
         per[r['display']] = per.get(r['display'], 0) + 1
-    print(f'✓ ورودی {len(rows)} | پس از چسباندن حرف‌خوانی و پالایش: {len(kept)} '
+    print(f'✓ ورودی تأییدشده {n_raw} | یکتاسازی: -{n_dedup} | پس از پالایش: {len(kept)} '
           f'(حذف‌شده {len(dropped)} · سرواژه‌سازی {merged_n}) → {a.out}')
     print('   پرتکرار:', '، '.join(f'{k}({v})' for k, v in
                                 sorted(per.items(), key=lambda kv: -kv[1])[:15]))

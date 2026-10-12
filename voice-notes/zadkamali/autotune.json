@@ -1,0 +1,446 @@
+{
+ "media1": {
+  "base16k": {
+   "words_a": 13,
+   "words_b": 13,
+   "conf_a": 0.678,
+   "conf_b": 0.846,
+   "agree": 0.385,
+   "low_a": 0.538,
+   "score": 0.5732
+  },
+  "loudnorm": {
+   "words_a": 12,
+   "words_b": 14,
+   "conf_a": 0.94,
+   "conf_b": 0.806,
+   "agree": 0.231,
+   "low_a": 0.083,
+   "score": 0.5519
+  },
+  "speechnorm_dyn": {
+   "words_a": 11,
+   "words_b": 13,
+   "conf_a": 0.725,
+   "conf_b": 0.805,
+   "agree": 0.417,
+   "low_a": 0.455,
+   "score": 0.5907
+  },
+  "hp_afftdn_loud": {
+   "words_a": 11,
+   "words_b": 13,
+   "conf_a": 0.723,
+   "conf_b": 0.691,
+   "agree": 0.25,
+   "low_a": 0.364,
+   "score": 0.4784
+  },
+  "compand_expand": {
+   "words_a": 12,
+   "words_b": 14,
+   "conf_a": 0.836,
+   "conf_b": 0.792,
+   "agree": 0.385,
+   "low_a": 0.083,
+   "score": 0.5992
+  },
+  "nr_gate": {
+   "words_a": 12,
+   "words_b": 14,
+   "conf_a": 0.774,
+   "conf_b": 0.809,
+   "agree": 0.231,
+   "low_a": 0.25,
+   "score": 0.5112
+  },
+  "vtln_up": {
+   "words_a": 0,
+   "words_b": 0,
+   "conf_a": 0.0,
+   "conf_b": 0.0,
+   "agree": 0.0,
+   "low_a": 0.0,
+   "score": 0.0
+  },
+  "vtln_down": {
+   "words_a": 0,
+   "words_b": 0,
+   "conf_a": 0.0,
+   "conf_b": 0.0,
+   "agree": 0.0,
+   "low_a": 0.0,
+   "score": 0.0
+  }
+ },
+ "media7": {
+  "base16k": {
+   "words_a": 69,
+   "words_b": 71,
+   "conf_a": 0.794,
+   "conf_b": 0.813,
+   "agree": 0.5,
+   "low_a": 0.246,
+   "score": 0.6518
+  },
+  "loudnorm": {
+   "words_a": 70,
+   "words_b": 71,
+   "conf_a": 0.785,
+   "conf_b": 0.832,
+   "agree": 0.539,
+   "low_a": 0.271,
+   "score": 0.6739
+  },
+  "speechnorm_dyn": {
+   "words_a": 70,
+   "words_b": 70,
+   "conf_a": 0.784,
+   "conf_b": 0.837,
+   "agree": 0.557,
+   "low_a": 0.229,
+   "score": 0.6838
+  },
+  "hp_afftdn_loud": {
+   "words_a": 41,
+   "words_b": 39,
+   "conf_a": 0.755,
+   "conf_b": 0.76,
+   "agree": 0.225,
+   "low_a": 0.317,
+   "score": 0.4911
+  },
+  "compand_expand": {
+   "words_a": 72,
+   "words_b": 69,
+   "conf_a": 0.786,
+   "conf_b": 0.836,
+   "agree": 0.511,
+   "low_a": 0.236,
+   "score": 0.6608
+  },
+  "nr_gate": {
+   "words_a": 69,
+   "words_b": 72,
+   "conf_a": 0.787,
+   "conf_b": 0.817,
+   "agree": 0.496,
+   "low_a": 0.246,
+   "score": 0.6491
+  },
+  "vtln_up": {
+   "words_a": 0,
+   "words_b": 3,
+   "conf_a": 0.0,
+   "conf_b": 0.531,
+   "agree": 0.0,
+   "low_a": 0.0,
+   "score": 0.1326
+  },
+  "vtln_down": {
+   "words_a": 0,
+   "words_b": 6,
+   "conf_a": 0.0,
+   "conf_b": 0.601,
+   "agree": 0.0,
+   "low_a": 0.0,
+   "score": 0.1502
+  }
+ },
+ "media9": {
+  "base16k": {
+   "words_a": 36,
+   "words_b": 37,
+   "conf_a": 0.863,
+   "conf_b": 0.851,
+   "agree": 0.548,
+   "low_a": 0.139,
+   "score": 0.7023
+  },
+  "loudnorm": {
+   "words_a": 39,
+   "words_b": 42,
+   "conf_a": 0.876,
+   "conf_b": 0.83,
+   "agree": 0.593,
+   "low_a": 0.179,
+   "score": 0.7227
+  },
+  "speechnorm_dyn": {
+   "words_a": 40,
+   "words_b": 41,
+   "conf_a": 0.84,
+   "conf_b": 0.821,
+   "agree": 0.568,
+   "low_a": 0.225,
+   "score": 0.6994
+  },
+  "hp_afftdn_loud": {
+   "words_a": 42,
+   "words_b": 43,
+   "conf_a": 0.792,
+   "conf_b": 0.85,
+   "agree": 0.471,
+   "low_a": 0.262,
+   "score": 0.6456
+  },
+  "compand_expand": {
+   "words_a": 36,
+   "words_b": 37,
+   "conf_a": 0.859,
+   "conf_b": 0.854,
+   "agree": 0.575,
+   "low_a": 0.167,
+   "score": 0.716
+  },
+  "nr_gate": {
+   "words_a": 39,
+   "words_b": 39,
+   "conf_a": 0.843,
+   "conf_b": 0.834,
+   "agree": 0.615,
+   "low_a": 0.179,
+   "score": 0.7269
+  },
+  "vtln_up": {
+   "words_a": 1,
+   "words_b": 0,
+   "conf_a": 0.511,
+   "conf_b": 0.0,
+   "agree": 0.0,
+   "low_a": 1.0,
+   "score": 0.1277
+  },
+  "vtln_down": {
+   "words_a": 0,
+   "words_b": 0,
+   "conf_a": 0.0,
+   "conf_b": 0.0,
+   "agree": 0.0,
+   "low_a": 0.0,
+   "score": 0.0
+  }
+ },
+ "media11": {
+  "base16k": {
+   "words_a": 47,
+   "words_b": 45,
+   "conf_a": 0.824,
+   "conf_b": 0.841,
+   "agree": 0.5,
+   "low_a": 0.213,
+   "score": 0.6663
+  },
+  "loudnorm": {
+   "words_a": 45,
+   "words_b": 48,
+   "conf_a": 0.771,
+   "conf_b": 0.855,
+   "agree": 0.516,
+   "low_a": 0.311,
+   "score": 0.6648
+  },
+  "speechnorm_dyn": {
+   "words_a": 43,
+   "words_b": 46,
+   "conf_a": 0.784,
+   "conf_b": 0.855,
+   "agree": 0.539,
+   "low_a": 0.256,
+   "score": 0.6796
+  },
+  "hp_afftdn_loud": {
+   "words_a": 42,
+   "words_b": 47,
+   "conf_a": 0.84,
+   "conf_b": 0.796,
+   "agree": 0.382,
+   "low_a": 0.214,
+   "score": 0.6
+  },
+  "compand_expand": {
+   "words_a": 46,
+   "words_b": 44,
+   "conf_a": 0.834,
+   "conf_b": 0.817,
+   "agree": 0.444,
+   "low_a": 0.217,
+   "score": 0.635
+  },
+  "nr_gate": {
+   "words_a": 43,
+   "words_b": 49,
+   "conf_a": 0.82,
+   "conf_b": 0.88,
+   "agree": 0.457,
+   "low_a": 0.186,
+   "score": 0.6534
+  },
+  "vtln_up": {
+   "words_a": 0,
+   "words_b": 1,
+   "conf_a": 0.0,
+   "conf_b": 0.783,
+   "agree": 0.0,
+   "low_a": 0.0,
+   "score": 0.1958
+  },
+  "vtln_down": {
+   "words_a": 0,
+   "words_b": 2,
+   "conf_a": 0.0,
+   "conf_b": 0.685,
+   "agree": 0.0,
+   "low_a": 0.0,
+   "score": 0.1713
+  }
+ },
+ "media17": {
+  "base16k": {
+   "words_a": 51,
+   "words_b": 51,
+   "conf_a": 0.831,
+   "conf_b": 0.795,
+   "agree": 0.412,
+   "low_a": 0.216,
+   "score": 0.6123
+  },
+  "loudnorm": {
+   "words_a": 49,
+   "words_b": 52,
+   "conf_a": 0.827,
+   "conf_b": 0.828,
+   "agree": 0.396,
+   "low_a": 0.163,
+   "score": 0.6116
+  },
+  "speechnorm_dyn": {
+   "words_a": 49,
+   "words_b": 52,
+   "conf_a": 0.812,
+   "conf_b": 0.789,
+   "agree": 0.416,
+   "low_a": 0.204,
+   "score": 0.6083
+  },
+  "hp_afftdn_loud": {
+   "words_a": 49,
+   "words_b": 41,
+   "conf_a": 0.786,
+   "conf_b": 0.826,
+   "agree": 0.333,
+   "low_a": 0.306,
+   "score": 0.5696
+  },
+  "compand_expand": {
+   "words_a": 54,
+   "words_b": 53,
+   "conf_a": 0.81,
+   "conf_b": 0.805,
+   "agree": 0.486,
+   "low_a": 0.185,
+   "score": 0.6466
+  },
+  "nr_gate": {
+   "words_a": 54,
+   "words_b": 54,
+   "conf_a": 0.842,
+   "conf_b": 0.845,
+   "agree": 0.5,
+   "low_a": 0.204,
+   "score": 0.6717
+  },
+  "vtln_up": {
+   "words_a": 0,
+   "words_b": 0,
+   "conf_a": 0.0,
+   "conf_b": 0.0,
+   "agree": 0.0,
+   "low_a": 0.0,
+   "score": 0.0
+  },
+  "vtln_down": {
+   "words_a": 0,
+   "words_b": 0,
+   "conf_a": 0.0,
+   "conf_b": 0.0,
+   "agree": 0.0,
+   "low_a": 0.0,
+   "score": 0.0
+  }
+ },
+ "media29": {
+  "base16k": {
+   "words_a": 57,
+   "words_b": 50,
+   "conf_a": 0.806,
+   "conf_b": 0.808,
+   "agree": 0.374,
+   "low_a": 0.193,
+   "score": 0.5905
+  },
+  "loudnorm": {
+   "words_a": 51,
+   "words_b": 50,
+   "conf_a": 0.796,
+   "conf_b": 0.825,
+   "agree": 0.376,
+   "low_a": 0.255,
+   "score": 0.5931
+  },
+  "speechnorm_dyn": {
+   "words_a": 51,
+   "words_b": 50,
+   "conf_a": 0.806,
+   "conf_b": 0.83,
+   "agree": 0.416,
+   "low_a": 0.235,
+   "score": 0.617
+  },
+  "hp_afftdn_loud": {
+   "words_a": 51,
+   "words_b": 50,
+   "conf_a": 0.816,
+   "conf_b": 0.808,
+   "agree": 0.356,
+   "low_a": 0.176,
+   "score": 0.5841
+  },
+  "compand_expand": {
+   "words_a": 53,
+   "words_b": 49,
+   "conf_a": 0.827,
+   "conf_b": 0.786,
+   "agree": 0.471,
+   "low_a": 0.17,
+   "score": 0.6385
+  },
+  "nr_gate": {
+   "words_a": 53,
+   "words_b": 51,
+   "conf_a": 0.803,
+   "conf_b": 0.81,
+   "agree": 0.538,
+   "low_a": 0.245,
+   "score": 0.6725
+  },
+  "vtln_up": {
+   "words_a": 1,
+   "words_b": 1,
+   "conf_a": 0.739,
+   "conf_b": 0.623,
+   "agree": 0.0,
+   "low_a": 0.0,
+   "score": 0.3405
+  },
+  "vtln_down": {
+   "words_a": 0,
+   "words_b": 2,
+   "conf_a": 0.0,
+   "conf_b": 0.603,
+   "agree": 0.0,
+   "low_a": 0.0,
+   "score": 0.1509
+  }
+ }
+}

@@ -17,7 +17,9 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
-from fa_phonetic import fa_key, Suggestor  # noqa: E402
+from fa_phonetic import fa_key, Suggestor, build_default  # noqa: E402
+
+LEX = build_default()
 
 STOP = {'تود', 'کاردی', 'خیلی', 'کسی', 'الکتریک', 'چپ', 'راست', 'بالا', 'پایین', 'ناحیه',
         'قلب', 'شکلی', 'میشه', 'داریم', 'تو', 'دو', 'سه', 'یک', 'هفت', 'نه'}
@@ -36,6 +38,19 @@ READ2ACRO: list[tuple[str, str]] = []
 for acro, readings in ACRO_READINGS.items():
     for r in readings:
         READ2ACRO.append((fa_key(r), acro))
+
+
+def strong_evidence(evw: str) -> bool:
+    """آیا واژهٔ شاهدِ متن آزاد، شاهدِ «قوی» است؟ (نه واژهٔ رایج/نقشی)"""
+    if not evw:
+        return False
+    if evw in LEX.exact:                       # شکل دقیقِ خودِ اصطلاح (مثل «عکس» برای axis)
+        return True
+    try:
+        from wordfreq import zipf_frequency
+        return zipf_frequency(evw, 'fa') < 4.8     # واژهٔ نسبتاً کم‌بسامد
+    except Exception:                                # pragma: no cover
+        return True
 
 
 def is_rare(word: str) -> bool:
@@ -110,6 +125,17 @@ def main() -> None:
             dropped.append(r)
             continue
         kept.append(r)
+
+    # ۲٫۵) شاهدهای ضعیف («این»، «که»، «سی»…) پذیرفته نمی‌شوند
+    strong_kept = []
+    for r in kept:
+        evw = (r.get('evidence') or {}).get('w', '')
+        if strong_evidence(evw) or r.get('mapped_from') in LEX.exact:
+            r['weak_evidence'] = not strong_evidence(evw) or None
+            strong_kept.append(r)
+        else:
+            dropped.append({**r, 'weak_evidence': evw})
+    kept = strong_kept
 
     # ۳) یکسان‌سازی نمایش
     for r in kept:

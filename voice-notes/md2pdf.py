@@ -66,6 +66,9 @@ def clean(text: str) -> str:
     text = text.replace('<br>', ' / ').replace('<', '‹').replace('>', '›')
     text = re.sub(r'`([^`]*)`', r'\1', text)
     text = re.sub(r'\[([^\]]+)\]\([^)]*\)', r'\1', text)          # حذف پیوندها
+    # زمان‌ها را داخل نشانهٔ جهت بگذار تا در متن راست‌به‌چپ جابه‌جا نشوند
+    text = re.sub(r'(?<![\d:])(\d{1,2}:\d{2}(?:\.\d)?)(?![\d])', '\u200e\\1\u200e', text)
+    text = re.sub(r'(\d+(?:\.\d+)?)s\b', '\u200e\\1s\u200e', text)
     # هر نویسهٔ بی‌گلیف را با جانشین امن/خالی عوض کن (تا مربع خالی چاپ نشود)
     cm = _cmap()
     out_chars, dropped = [], set()
